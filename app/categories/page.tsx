@@ -48,7 +48,7 @@ export default function CategoriesPage() {
                           fill
                           className="object-contain"
                           sizes="80px"
-                          quality={100}
+                          quality={75}
                         />
                       ) : (
                         <Bot className="w-10 h-10 text-white" />

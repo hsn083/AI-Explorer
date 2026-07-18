@@ -25,58 +25,155 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-[700px] lg:min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Hero Banner Image */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0 -z-20"
-        >
-          <Image
-            src="/Hero.png"
-            alt="Z.N.K Tools & Services - Premium Digital Subscriptions"
-            fill={true}
-            priority={true}
-            quality={100}
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-        </motion.div>
+  {/* Hero Section */}
+<section
+  className="
+    relative
+    min-h-[100svh]
+    flex
+    items-center
+    justify-center
+    overflow-hidden
+  "
+>
 
-        {/* Light Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-black/15 -z-10" />
-
-        {/* Content - Buttons Only */}
-<div className="absolute inset-x-0 bottom-40 md:bottom-40 z-20 flex justify-center px-4">
+  {/* Responsive Hero Banner */}
   <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="absolute inset-0 -z-20"
   >
-    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-      <a
-        href={hero.primaryButton.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-8 py-4 rounded-full text-white font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-        style={{ backgroundColor: '#25D366' }}
-      >
-        <FaWhatsapp className="w-5 h-5" />
-        {hero.primaryButton.text}
-      </a>
 
-      <Link
-        href={hero.secondaryButton.link}
-        className="px-8 py-4 rounded-full glass text-white font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
-      >
-        {hero.secondaryButton.text}
-        <ArrowRight className="w-5 h-5" />
-      </Link>
-    </div>
+    <picture>
+
+      {/* Mobile */}
+      <source
+        media="(max-width: 640px)"
+        srcSet="/Hero-mobile.png"
+      />
+
+      {/* Tablet */}
+      <source
+        media="(max-width: 1024px)"
+        srcSet="/Hero-tablet.png"
+      />
+
+      {/* Desktop */}
+      <img
+        src="/Hero.png"
+        alt="Z.N.K Tools & Services"
+        className="
+          w-full
+          h-full
+          object-cover
+          object-center
+        "
+      />
+
+    </picture>
+
   </motion.div>
-</div>
+
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/20 -z-10" />
+
+
+  {/* Content */}
+<div
+  className="
+    absolute
+ bottom-[12vh]
+sm:bottom-[14vh]
+md:bottom-[16vh]
+lg:bottom-32
+
+    left-0
+    w-full
+
+    z-20
+    px-4
+    sm:px-6
+    lg:px-8
+
+    text-center
+  "
+>
+
+    <motion.div
+      initial={{opacity:0,y:30}}
+      animate={{opacity:1,y:0}}
+      transition={{duration:0.8}}
+      className="w-full max-w-4xl mx-auto"
+    >
+
+      {/* Buttons */}
+      <div
+  className="
+  flex
+  flex-col
+  sm:flex-row
+  items-center
+  justify-center
+  gap-3
+  sm:gap-5
+  "
+>
+
+        <a
+          href={hero.primaryButton.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            w-full
+            max-w-[320px]
+            sm:w-auto
+            px-8
+            py-3.5
+            rounded-full
+            text-white
+            font-semibold
+            flex
+            justify-center
+            items-center
+            gap-2
+          "
+          style={{backgroundColor:"#25D366"}}
+        >
+          <FaWhatsapp className="w-5 h-5"/>
+          {hero.primaryButton.text}
+        </a>
+
+
+        <Link
+          href={hero.secondaryButton.link}
+          className="
+            w-full
+            max-w-[320px]
+            sm:w-auto
+            px-8
+            py-3.5
+            rounded-full
+            glass
+            text-white
+            font-semibold
+            flex
+            justify-center
+            items-center
+            gap-2
+          "
+        >
+          {hero.secondaryButton.text}
+          <ArrowRight className="w-5 h-5"/>
+        </Link>
+
+      </div>
+
+    </motion.div>
+
+  </div>
+
 </section>
 
       {/* Trust Bar */}
@@ -136,7 +233,7 @@ export default function Home() {
                           fill
                           className="object-contain"
                           sizes="64px"
-                          quality={100}
+                          quality={75}
                         />
                       ) : (
                         <Bot className="w-8 h-8 text-white" />

@@ -81,7 +81,7 @@ Please share the payment details. Thank you!`;
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  quality={100}
+                  quality={75}
                   priority
                 />
               ) : (
