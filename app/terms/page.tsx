@@ -56,7 +56,7 @@ export default function TermsPage() {
               </p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
                 <li>Maintaining the confidentiality of account credentials</li>
-                <li>Using accounts in accordance with the service provider's terms</li>
+                <li>Using accounts in accordance with the service provider&apos;s terms</li>
                 <li>Not sharing accounts with unauthorized users</li>
                 <li>Complying with all applicable laws and regulations</li>
               </ul>

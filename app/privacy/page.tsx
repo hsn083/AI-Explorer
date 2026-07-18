@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
               <p className="text-gray-400">
-                Z.N.K Tools & Services ("we", "our", or "us") is committed to protecting your privacy. 
+                Z.N.K Tools & Services (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. 
                 This Privacy Policy explains how we collect, use, and safeguard your information when you use our website.
               </p>
             </section>
