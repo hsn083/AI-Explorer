@@ -1,91 +1,200 @@
-# Z.N.K Tools & Services
+# 🚀 Z.N.K Premium Digital Tools Store
 
-Premium digital subscription website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
+A modern and premium digital subscription marketplace built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-## Features
+Z.N.K provides premium digital products like AI tools, productivity software, learning platforms, and entertainment subscriptions with a simple WhatsApp-based ordering system.
 
-- **Premium Dark Theme** with neon gradients and glassmorphism
-- **Responsive Design** for all devices
-- **Smooth Animations** using Framer Motion
-- **WhatsApp Integration** for orders
-- **JSON-based Content** for easy editing
-- **SEO Optimized** with metadata and sitemap
-- **No Database Required** - all data stored in JSON files
+---
 
-## Getting Started
+## ✨ Features
 
-### Prerequisites
+### 🛒 Product System
+- Premium product cards
+- Product detail pages
+- Dynamic product routing
+- Product images and galleries
+- Product categories
+- Pricing display
+- WhatsApp order integration
 
-- Node.js 18+ installed
-- npm or yarn package manager
+### 📦 Digital Products
+Supported products include:
 
-### Installation
+- 🤖 ChatGPT Plus Premium
+- 🎬 CapCut Pro
+- ✨ Google AI Pro
+- 🎥 Veo 3 Ultra
+- 🧠 Super Grok
+- 📺 Amazon Prime
+- 🎓 Coursera Premium
+- 💼 LinkedIn Premium Career
 
-1. Install dependencies:
+---
+
+## ⭐ Customer Reviews
+
+- Customer review section
+- Star ratings
+- User avatar system
+- Helpful review button
+- Review dates
+- Multiple customer feedback display
+
+---
+
+## 🎨 UI / Design
+
+- Premium modern design
+- Responsive layout
+- Mobile-friendly interface
+- Glassmorphism effects
+- Smooth animations
+- Professional product cards
+- Optimized images
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+
+### Tools & Libraries
+- React Icons
+- Next Image Optimization
+- Local JSON Data Management
+- Modern CSS Animations
+
+---
+
+## 📂 Project Structure
+
+```
+Z.N.K/
+│
+├── app/
+│   ├── products/
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ProductCard
+│   ├── Reviews
+│   ├── Navbar
+│   └── Footer
+│
+├── data/
+│   ├── products.json
+│   └── categories.json
+│
+├── public/
+│   ├── images/
+│   └── avatars/
+│
+├── types/
+├── utils/
+│
+├── package.json
+├── tailwind.config.ts
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Z.N.K.git
+```
+
+### 2. Enter Project Folder
+
+```bash
+cd Z.N.K
+```
+
+### 3. Install Dependencies
+
 ```bash
 npm install
 ```
 
-2. Run the development server:
+### 4. Run Development Server
+
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## Project Structure
+Open:
 
 ```
-├── app/              # Next.js app directory
-│   ├── globals.css   # Global styles
-│   ├── layout.tsx    # Root layout
-│   ├── page.tsx      # Home page
-│   └── [pages]/      # Other pages
-├── components/       # Reusable components
-├── data/            # JSON data files
-│   ├── products.json
-│   ├── reviews.json
-│   ├── categories.json
-│   ├── faq.json
-│   ├── hero.json
-│   └── settings.json
-├── types/           # TypeScript types
-├── utils/           # Utility functions
-└── public/          # Static assets
+http://localhost:3000
 ```
 
-## Editing Content
+---
 
-All content is stored in JSON files in the `data/` directory:
+## 📱 WhatsApp Ordering System
 
-- **products.json** - Product information
-- **reviews.json** - Customer reviews
-- **categories.json** - Product categories
-- **faq.json** - Frequently asked questions
-- **hero.json** - Hero section content
-- **settings.json** - Business settings and configuration
+Customers can order products directly through WhatsApp.
 
-## Technologies Used
+Order message example:
 
-- **Next.js 15** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Lucide React** - Icons
+```
+Hello! 👋
 
-## Business Information
+I'm interested in purchasing:
 
-- **Name**: Z.N.K Tools & Services
-- **WhatsApp**: +92 314 3111118
-- **Type**: Digital Subscription Store
+✨ ChatGPT Plus Premium
+💰 Price: PKR 1,899
 
-## License
+Please share the payment details. Thank you!
+```
 
-© 2024 Z.N.K Tools & Services. All rights reserved.
+---
+
+## ⚡ Performance Features
+
+- Optimized Next.js images
+- Responsive components
+- Fast page loading
+- Clean component architecture
+- SEO-friendly structure
+
+---
+
+## 🔮 Future Improvements
+
+Planned features:
+
+- User authentication
+- Admin dashboard
+- Online payment integration
+- Order management system
+- Product search
+- Wishlist system
+- Customer accounts
+- Database integration
+
+---
+
+## 👨‍💻 Developer
+
+Developed with ❤️ using modern web technologies.
+
+**Tech Stack:**
+Next.js • React • TypeScript • Tailwind CSS
+
+---
+
+## 📄 License
+
+This project is for educational and commercial purposes.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
