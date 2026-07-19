@@ -39,8 +39,8 @@ export default function CategoriesPage() {
                 whileHover={{ scale: 1.02 }}
               >
                 <Link href={`/products?category=${category.name}`}>
-                  <div className={`glass rounded-3xl p-8 h-full hover:neon-glow transition-all duration-300 bg-gradient-to-br ${category.color} bg-opacity-10`}>
-                    <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-6 overflow-hidden">
+                  <div className={`glass rounded-3xl p-6 sm:p-8 h-full hover:neon-glow transition-all duration-300 bg-gradient-to-br ${category.color} bg-opacity-10`}>
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 sm:mb-6 overflow-hidden">
                       {category.image ? (
                         <Image
                           src={category.image}
@@ -52,13 +52,13 @@ export default function CategoriesPage() {
                           loading="lazy"
                         />
                       ) : (
-                        <Bot className="w-10 h-10 text-white" />
+                        <Bot className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                       )}
                     </div>
-                    <h3 className="text-white font-bold text-2xl mb-3">{category.name}</h3>
-                    <p className="text-gray-400 mb-4">{category.description}</p>
+                    <h3 className="text-white font-bold text-lg sm:text-2xl mb-2 sm:mb-3">{category.name}</h3>
+                    <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 line-clamp-2">{category.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-neon-blue font-medium">{productCount} Products</span>
+                      <span className="text-neon-blue font-medium text-sm sm:text-base">{productCount} Products</span>
                       <span className="text-gray-400">→</span>
                     </div>
                   </div>
