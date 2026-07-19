@@ -27,10 +27,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#znktools' },
-    { name: 'Instagram', icon: Instagram, href: '#znktools' },
-    { name: 'TikTok', icon: FaTiktok, href: '#znktools' },
-    { name: 'YouTube', icon: Youtube, href: '#znktools' },
+    { name: 'Facebook', icon: Facebook, href: '#aiexplorer' },
+    { name: 'Instagram', icon: Instagram, href: '#aiexplorer' },
+    { name: 'TikTok', icon: FaTiktok, href: '#aiexplorer' },
+    { name: 'YouTube', icon: Youtube, href: '#aiexplorer' },
   ];
 
   return (
@@ -42,12 +42,15 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Image
                 src="/logo.png"
-                alt="Z.N.K Tools & Services"
+                alt="AI Explorer"
                 width={40}
                 height={40}
                 className="rounded-full neon-glow"
               />
-              <span className="text-white font-bold text-xl">Z.N.K Tools</span>
+              <span className="font-bold text-2xl tracking-wide">
+                <span className="text-[#A3E635]">AI</span>
+                <span className="text-white ml-1">EXPLORER</span>
+              </span>
             </div>
             <p className="text-gray-400 mb-4">
               Premium digital subscriptions at affordable prices. Instant delivery via WhatsApp.
@@ -125,7 +128,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Z.N.K Tools & Services. All rights reserved.
+            © {currentYear} AI Explorer. All rights reserved.
           </p>
         </div>
       </div>

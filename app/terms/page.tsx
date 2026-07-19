@@ -24,7 +24,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
               <p className="text-gray-400">
-                Welcome to Z.N.K Tools & Services. By using our website and services, you agree to these Terms & Conditions.
+                Welcome to AI Explorer. By using our website and services, you agree to these Terms & Conditions.
               </p>
             </section>
 
@@ -108,7 +108,7 @@ export default function TermsPage() {
               </p>
               <p className="text-gray-400 mt-2">
                 WhatsApp: +92 314 3111118<br />
-                Email: support@znktools.com
+                Email: work31323@gmail.com
               </p>
             </section>
 

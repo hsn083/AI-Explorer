@@ -1,42 +1,47 @@
 {
-  "businessName": "Z.N.K Tools & Services",
+  "businessName": "AI Explorer",
   "whatsappNumber": "+92 314 3111118",
   "whatsappLink": "https://wa.me/923143111118",
   "businessHours": "24/7",
   "email": "work31323@gmail.com",
   "socialLinks": {
-    "facebook": "#znktools",
-    "instagram": "#znktools",
-    "tiktok": "#znktools",
-    "youtube": "#znktools"
+    "facebook": "#aiexplorer",
+    "instagram": "#aiexplorer",
+    "tiktok": "#aiexplorer",
+    "youtube": "#aiexplorer"
   },
   "seo": {
-    "defaultTitle": "Z.N.K Tools & Services - Premium Digital Subscriptions",
-    "defaultDescription": "Get genuine AI tools, streaming subscriptions and learning platforms at affordable prices. Instant delivery via WhatsApp.",
-    "defaultKeywords": "AI tools, ChatGPT Plus, CapCut Pro, Google AI, digital subscriptions, streaming, learning platforms"
+    "defaultTitle": "AI Explorer | Premium AI Tools & Digital Resources",
+    "defaultDescription": "Discover the best AI tools, premium subscriptions, productivity software, and digital resources all in one place.",
+    "defaultKeywords": "AI Explorer, AI Tools, ChatGPT Plus, CapCut Pro, Google AI Pro, AI Software, Premium Tools, Digital Products"
   },
-  "trustBadges": [
-    {
-      "icon": "ShieldCheck",
-      "text": "100% Genuine"
-    },
-    {
-      "icon": "Zap",
-      "text": "Instant Delivery"
-    },
-    {
-      "icon": "Award",
-      "text": "Trusted Seller"
-    },
-    {
-      "icon": "DollarSign",
-      "text": "Affordable Prices"
-    },
-    {
-      "icon": "MessageCircle",
-      "text": "24/7 WhatsApp Support"
-    }
-  ],
+"trustBadges": [
+  {
+    "icon": "ShieldCheck",
+    "text": "100% Secure",
+    "description": "Safe & protected digital purchases."
+  },
+  {
+    "icon": "BadgeCheck",
+    "text": "Verified Accounts",
+    "description": "Only genuine premium subscriptions."
+  },
+  {
+    "icon": "Zap",
+    "text": "Instant Delivery",
+    "description": "Orders delivered within minutes."
+  },
+  {
+    "icon": "Award",
+    "text": "Premium Quality",
+    "description": "Top-rated AI tools & services."
+  },
+  {
+    "icon": "DollarSign",
+    "text": "Best Prices",
+    "description": "Affordable pricing with great value."
+  }
+],
   "statistics": [
     {
       "value": 2500,

@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
               <p className="text-gray-400">
-                Z.N.K Tools & Services (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. 
+                AI Explorer is committed to protecting your privacy. 
                 This Privacy Policy explains how we collect, use, and safeguard your information when you use our website.
               </p>
             </section>
@@ -86,7 +86,7 @@ export default function PrivacyPage() {
               </p>
               <p className="text-gray-400 mt-2">
                 WhatsApp: +92 314 3111118<br />
-                Email: support@znktools.com
+                Email: work31323@gmail.com
               </p>
             </section>
 

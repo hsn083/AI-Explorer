@@ -16,6 +16,11 @@ const config: Config = {
           purple: "#a855f7",
           pink: "#ec4899",
         },
+        lime: {
+          400: "#A3E635",
+          500: "#84CC16",
+          600: "#65A30D",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -25,7 +30,12 @@ const config: Config = {
       animation: {
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "float": "float 3s ease-in-out infinite",
+        "float-slow": "float 4s ease-in-out infinite",
+        "float-delayed": "float 3s ease-in-out 1s infinite",
         "glow": "glow 2s ease-in-out infinite alternate",
+        "orbit": "orbit 20s linear infinite",
+        "orbit-reverse": "orbit 25s linear infinite reverse",
+        "spin-slow": "spin 12s linear infinite",
       },
       keyframes: {
         float: {
@@ -35,6 +45,10 @@ const config: Config = {
         glow: {
           "0%": { boxShadow: "0 0 5px #00d4ff, 0 0 10px #00d4ff" },
           "100%": { boxShadow: "0 0 20px #a855f7, 0 0 30px #a855f7" },
+        },
+        orbit: {
+          "0%": { transform: "rotate(0deg) translateX(150px) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(150px) rotate(-360deg)" },
         },
       },
     },

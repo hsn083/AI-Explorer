@@ -17,8 +17,8 @@ export default function LoadingScreen() {
         }}
         className="relative"
       >
-        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center neon-glow">
-          <span className="text-white font-bold text-3xl">Z</span>
+        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-lime-400 via-lime-500 to-lime-600 flex items-center justify-center">
+          <span className="text-black font-bold text-3xl">AI</span>
         </div>
       </motion.div>
     </div>

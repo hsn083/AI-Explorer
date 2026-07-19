@@ -1,8 +1,8 @@
-# 🚀 Z.N.K Premium Digital Tools Store
+# 🚀 AI Explorer Premium Digital Tools Store
 
 A modern and premium digital subscription marketplace built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-Z.N.K provides premium digital products like AI tools, productivity software, learning platforms, and entertainment subscriptions with a simple WhatsApp-based ordering system.
+AI Explorer provides premium digital products like AI tools, productivity software, learning platforms, and entertainment subscriptions with a simple WhatsApp-based ordering system.
 
 ---
 
@@ -73,7 +73,7 @@ Supported products include:
 ## 📂 Project Structure
 
 ```
-Z.N.K/
+ai-explorer/
 │
 ├── app/
 │   ├── products/
@@ -109,13 +109,13 @@ Z.N.K/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Z.N.K.git
+git clone https://github.com/YOUR_USERNAME/ai-explorer.git
 ```
 
 ### 2. Enter Project Folder
 
 ```bash
-cd Z.N.K
+cd ai-explorer
 ```
 
 ### 3. Install Dependencies
