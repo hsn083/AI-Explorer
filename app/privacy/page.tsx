@@ -18,11 +18,11 @@ export default function PrivacyPage() {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl font-bold text-white mb-8">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold text-black mb-8">Privacy Policy</h1>
           
           <div className="glass rounded-3xl p-8 space-y-6">
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Introduction</h2>
               <p className="text-gray-400">
                 AI Explorer is committed to protecting your privacy. 
                 This Privacy Policy explains how we collect, use, and safeguard your information when you use our website.
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Information We Collect</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Information We Collect</h2>
               <p className="text-gray-400 mb-4">We may collect the following types of information:</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
                 <li>Contact information (name, email, phone number) provided voluntarily</li>
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">How We Use Your Information</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">How We Use Your Information</h2>
               <p className="text-gray-400 mb-4">We use your information to:</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
                 <li>Process and fulfill your orders</li>
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Data Security</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Data Security</h2>
               <p className="text-gray-400">
                 We implement appropriate security measures to protect your personal information. 
                 However, no method of transmission over the internet is 100% secure.
@@ -61,7 +61,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Third-Party Services</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Third-Party Services</h2>
               <p className="text-gray-400">
                 We use third-party services for payment processing and communication. 
                 These services have their own privacy policies which we encourage you to review.
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Your Rights</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Your Rights</h2>
               <p className="text-gray-400 mb-4">You have the right to:</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
                 <li>Access your personal information</li>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Contact Us</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Contact Us</h2>
               <p className="text-gray-400">
                 If you have questions about this Privacy Policy, please contact us at:
               </p>

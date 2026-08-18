@@ -4,39 +4,71 @@
     "name": "AI Tools",
     "image": "/AI Tools.png",
     "description": "Advanced AI-powered tools for productivity and creativity",
-    "productCount": 4,
+    "productCount": 10,
     "color": "from-blue-500 to-purple-500"
   },
   {
     "id": 2,
-    "name": "Streaming",
-    "image": "/Streaming.png",
-    "description": "Premium streaming services for entertainment",
-    "productCount": 1,
+    "name": "Video",
+    "image": "/Video Editing.png",
+    "description": "Professional video editing and creation tools",
+    "productCount": 4,
     "color": "from-pink-500 to-red-500"
   },
   {
     "id": 3,
-    "name": "Learning",
-    "image": "/Learning.png",
-    "description": "Educational platforms to enhance your skills",
-    "productCount": 1,
-    "color": "from-green-500 to-teal-500"
+    "name": "Design",
+    "image": "/Productivity.png",
+    "description": "Creative design and graphic tools",
+    "productCount": 2,
+    "color": "from-purple-500 to-pink-500"
   },
   {
     "id": 4,
     "name": "Productivity",
     "image": "/Productivity.png",
     "description": "Tools to boost your productivity and career",
-    "productCount": 1,
+    "productCount": 2,
     "color": "from-yellow-500 to-orange-500"
   },
   {
     "id": 5,
-    "name": "Video Editing",
-    "image": "/Video Editing.png",
-    "description": "Professional video editing software and tools",
+    "name": "VPN",
+    "image": "/Streaming.png",
+    "description": "Secure VPN and proxy services",
+    "productCount": 4,
+    "color": "from-green-500 to-teal-500"
+  },
+  {
+    "id": 6,
+    "name": "Accounts",
+    "image": "/Learning.png",
+    "description": "Premium email and account services",
+    "productCount": 2,
+    "color": "from-blue-500 to-cyan-500"
+  },
+  {
+    "id": 7,
+    "name": "Developer Tools",
+    "image": "/AI Tools.png",
+    "description": "Development and coding tools",
     "productCount": 1,
-    "color": "from-purple-500 to-pink-500"
+    "color": "from-orange-500 to-red-500"
+  },
+  {
+    "id": 8,
+    "name": "Automation",
+    "image": "/Productivity.png",
+    "description": "Workflow automation and integration tools",
+    "productCount": 1,
+    "color": "from-indigo-500 to-purple-500"
+  },
+  {
+    "id": 9,
+    "name": "Streaming",
+    "image": "/Streaming.png",
+    "description": "Premium streaming and entertainment services",
+    "productCount": 1,
+    "color": "from-red-500 to-pink-500"
   }
 ]

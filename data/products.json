@@ -1,226 +1,758 @@
 [
   {
     "id": 1,
-    "slug": "chatgpt-plus",
-    "name": "ChatGPT Plus",
+    "slug": "lovable-extension",
+    "name": "Lovable Extension",
     "category": "AI Tools",
-    "price": 1899,
-    "oldPrice": 2500,
-    "rating": 5,
-    "reviewCount": 286,
-    "description": "Unlock the full power of ChatGPT with GPT-4, faster response times, priority access during peak hours, and early access to new features.",
+    "price": 2290,
+    "oldPrice": 4200,
+    "description": "Premium AI-powered extension for enhanced productivity and intelligent assistance.",
     "features": [
-      "GPT-4 Access",
-      "Faster Response Times",
-      "Priority Access",
-      "Early Feature Access",
-      "Image Generation with DALL-E",
-      "Web Browsing Capability"
-    ],
-    "benefits": [
-      "Boost productivity with advanced AI",
-      "Get accurate and detailed responses",
-      "Access during high-demand periods",
-      "Experience cutting-edge AI features"
-    ],
-    "image": "/ChatGPT.png",
-    "popular": true,
-    "badge": "Best Seller"
-  },
-  {
-    "id": 2,
-    "slug": "capcut-pro",
-    "name": "CapCut Pro",
-    "category": "Video Editing",
-    "price": 999,
-    "oldPrice": 1499,
-    "rating": 5,
-    "reviewCount": 214,
-    "description": "Professional video editing suite with advanced effects, AI-powered tools, unlimited exports, and premium templates for content creators.",
-    "features": [
-      "Advanced Video Effects",
-      "AI-Powered Tools",
-      "Unlimited Exports",
-      "Premium Templates",
-      "No Watermark",
-      "Cloud Storage"
-    ],
-    "benefits": [
-      "Create stunning videos effortlessly",
-      "Access professional editing tools",
-      "Export without watermarks",
-      "Save projects in the cloud"
-    ],
-    "image": "/Capcut.png",
-    "popular": true,
-    "badge": "Popular"
-  },
-  {
-    "id": 3,
-    "slug": "google-ai-pro-owner-account",
-    "name": "Google AI Pro Owner Account (18 Months)",
-    "category": "AI Tools",
-    "price": 1499,
-    "oldPrice": 1999,
-    "rating": 5,
-    "reviewCount": 167,
-    "description": "Full owner account access to Google AI Pro with 18 months validity. Includes Gemini Ultra, advanced AI features, and 2TB storage.",
-    "features": [
-      "Owner Account Access",
-      "18 Months Validity",
-      "Gemini Ultra Access",
-      "2TB Cloud Storage",
-      "Advanced AI Features",
+      "AI-Powered Assistance",
+      "Smart Automation",
+      "Real-time Suggestions",
+      "Seamless Integration",
+      "Advanced Analytics",
       "Priority Support"
     ],
     "benefits": [
-      "Complete control over your account",
-      "Long-term validity at great price",
-      "Access to most advanced Google AI",
-      "Massive storage for all your needs"
+      "Boost productivity with AI",
+      "Get intelligent suggestions",
+      "Automate repetitive tasks",
+      "Work smarter, not harder"
     ],
-    "image": "/Gemini.png",
+    "image": "/lovable.png",
+    "popular": true,
+    "badge": "Best Seller",
+    "duration": "1 Month",
+    "sold": 1807
+  },
+  {
+    "id": 2,
+    "slug": "jio-gemini-ai-pro",
+    "name": "Jio Gemini AI Pro — 18 Months",
+    "category": "AI Tools",
+    "price": 1490,
+    "oldPrice": 5000,
+    "description": "18-month access to Jio's Gemini AI Pro with advanced features and capabilities.",
+    "features": [
+      "18 Months Validity",
+      "Advanced AI Models",
+      "Multi-language Support",
+      "High-speed Processing",
+      "Cloud Integration",
+      "Regular Updates"
+    ],
+    "benefits": [
+      "Long-term AI access",
+      "Cutting-edge technology",
+      "Great value for money",
+      "Reliable performance"
+    ],
+    "image": "/jio-gemini.jpeg",
+    "popular": true,
+    "badge": "Popular",
+    "duration": "18 Months",
+    "sold": 1819
+  },
+  {
+    "id": 3,
+    "slug": "vocogen",
+    "name": "Vocogen (Elevenlabs Engine)",
+    "category": "AI Tools",
+    "price": 690,
+    "oldPrice": 2300,
+    "description": "Professional voice generation powered by ElevenLabs engine for 6 months.",
+    "features": [
+      "ElevenLabs Engine",
+      "6 Months Access",
+      "Natural Voice Generation",
+      "Multiple Voice Options",
+      "High Quality Audio",
+      "Commercial Use"
+    ],
+    "benefits": [
+      "Create realistic voiceovers",
+      "Professional audio quality",
+      "Easy to use interface",
+      "Perfect for content creators"
+    ],
+    "image": "/vocogen.png",
     "popular": false,
-    "badge": null
+    "badge": null,
+    "duration": "6 Months",
+    "sold": 2021
   },
   {
     "id": 4,
-    "slug": "veo-3-ultra",
-    "name": "Veo 3 Ultra",
-    "category": "AI Tools",
-    "price": 1499,
-    "oldPrice": 1899,
-    "rating": 5,
-    "reviewCount": 198,
-    "description": "Google's latest AI video generation model. Create stunning videos from text prompts with ultra-high quality and cinematic results.",
+    "slug": "heygen-creator",
+    "name": "HeyGen Creator Plan (1 Month)",
+    "category": "Video",
+    "price": 6500,
+    "oldPrice": 8500,
+    "description": "Professional AI video creation platform with advanced features for 1 month.",
     "features": [
-      "Text-to-Video Generation",
-      "Ultra High Quality",
-      "Cinematic Results",
-      "Multiple Style Options",
-      "Fast Rendering",
-      "Commercial Use License"
+      "AI Video Generation",
+      "1 Month Access",
+      "Custom Avatars",
+      "Voice Cloning",
+      "HD Video Export",
+      "Template Library"
     ],
     "benefits": [
-      "Generate professional videos instantly",
-      "Create content without filming",
-      "Access cutting-edge AI technology",
-      "Perfect for content creators"
+      "Create videos with AI",
+      "Professional quality output",
+      "Save time on production",
+      "Engaging content creation"
     ],
-    "image": "/Veo3.png",
+    "image": "/heygen.png",
     "popular": false,
-    "badge": "New"
+    "badge": "Premium",
+    "duration": "1 Month",
+    "sold": 2014
   },
   {
     "id": 5,
-    "slug": "super-grok",
-    "name": "Super Grok (3 Months)",
-    "category": "AI Tools",
-    "price": 2999,
-    "oldPrice": 3800,
-    "rating": 5,
-    "reviewCount": 156,
-    "description": "Access to xAI's Grok AI with real-time information, advanced reasoning capabilities, and image generation for 3 months.",
+    "slug": "capcut-6-months",
+    "name": "Capcut 6 Months",
+    "category": "Video",
+    "price": 1500,
+    "oldPrice": 6000,
+    "description": "Professional video editing suite with advanced features for 6 months.",
     "features": [
-      "Real-Time Information",
-      "Advanced Reasoning",
-      "Image Generation",
-      "3 Months Access",
-      "X Platform Integration",
-      "No Usage Limits"
+      "Advanced Editing Tools",
+      "6 Months Validity",
+      "AI Effects",
+      "No Watermark",
+      "Premium Templates",
+      "Cloud Storage"
     ],
     "benefits": [
-      "Get real-time AI responses",
-      "Advanced problem-solving capabilities",
-      "Generate images with AI",
-      "Seamless X platform integration"
+      "Professional video editing",
+      "Create stunning content",
+      "Access premium features",
+      "Great value for creators"
     ],
-    "image": "/Groq.png",
+    "image": "/capcut.png",
     "popular": true,
-    "badge": "Premium"
+    "badge": "Best Value",
+    "duration": "6 Months",
+    "sold": 1840
   },
   {
     "id": 6,
-    "slug": "amazon-prime",
-    "name": "Amazon Prime (6 Months)",
-    "category": "Streaming",
-    "price": 1699,
-    "oldPrice": 2499,
-    "rating": 5,
-    "reviewCount": 251,
-    "description": "6 months of Amazon Prime with free shipping, Prime Video streaming, Prime Music, exclusive deals, and Prime Gaming benefits.",
+    "slug": "chatgpt-plus",
+    "name": "ChatGPT Plus",
+    "category": "AI Tools",
+    "price": 3400,
+    "oldPrice": 5700,
+    "description": "Unlock the full power of ChatGPT with GPT-4, faster response times, and priority access for 1 month.",
     "features": [
-      "Free Shipping",
-      "Prime Video Streaming",
-      "Prime Music",
-      "Exclusive Deals",
-      "Prime Gaming",
-      "6 Months Validity"
+      "GPT-4 Access",
+      "1 Month Validity",
+      "Faster Response Times",
+      "Priority Access",
+      "Image Generation",
+      "Web Browsing"
     ],
     "benefits": [
-      "Save on shipping costs",
-      "Watch thousands of movies and shows",
-      "Ad-free music streaming",
-      "Exclusive member discounts"
+      "Advanced AI capabilities",
+      "Faster responses",
+      "Priority during peak hours",
+      "Cutting-edge features"
     ],
-    "image": "/Prime video.png",
+    "image": "/chatgpt-plus.jpg",
     "popular": true,
-    "badge": "Best Value"
+    "badge": "Best Seller",
+    "duration": "1 Month",
+    "sold": 2020
   },
   {
     "id": 7,
-    "slug": "coursera",
-    "name": "Coursera (1 Year)",
-    "category": "Learning",
-    "price": 2900,
-    "oldPrice": 3500,
-    "rating": 5,
-    "reviewCount": 189,
-    "description": "Full year access to Coursera Plus with unlimited courses from top universities and companies. Earn certificates and advance your career.",
+    "slug": "capcut-pro-1-month",
+    "name": "CapCut Pro — 1 Month",
+    "category": "Video",
+    "price": 1000,
+    "oldPrice": 1800,
+    "description": "Professional video editing with premium features for 1 month.",
     "features": [
-      "Unlimited Courses",
-      "Top University Content",
-      "Professional Certificates",
-      "1 Year Access",
-      "Mobile Learning",
-      "Offline Access"
+      "Premium Editing Tools",
+      "1 Month Access",
+      "No Watermark",
+      "AI Effects",
+      "Advanced Filters",
+      "Export in HD"
     ],
     "benefits": [
-      "Learn from world-class institutions",
-      "Earn recognized certificates",
-      "Advance your career with skills",
-      "Learn at your own pace"
+      "Professional editing",
+      "No watermarks",
+      "Advanced features",
+      "Perfect for short-term projects"
     ],
-    "image": "/Coursera.png",
+    "image": "/capcut.png",
     "popular": false,
-    "badge": null
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1863
   },
   {
     "id": 8,
-    "slug": "linkedin-premium-career",
-    "name": "LinkedIn Premium Career (3 Months)",
-    "category": "Productivity",
-    "price": 1099,
-    "oldPrice": 1799,
-    "rating": 5,
-    "reviewCount": 142,
-    "description": "3 months of LinkedIn Premium Career with InMail credits, job insights, learning courses, and profile visibility boost.",
+    "slug": "canva-pro",
+    "name": "Canva Pro (12 Months)",
+    "category": "Design",
+    "price": 690,
+    "oldPrice": 1500,
+    "description": "Full year access to Canva Pro with premium design tools and resources.",
     "features": [
+      "12 Months Validity",
+      "Premium Templates",
+      "Brand Kit",
+      "Background Remover",
+      "Advanced Analytics",
+      "Unlimited Storage"
+    ],
+    "benefits": [
+      "Professional designs",
+      "Huge template library",
+      "Brand consistency",
+      "Great annual value"
+    ],
+    "image": "/Canva.jpeg",
+    "popular": true,
+    "badge": "Popular",
+    "duration": "12 Months",
+    "sold": 1893
+  },
+  {
+    "id": 9,
+    "slug": "hotmail-account",
+    "name": "Hotmail Account",
+    "category": "Accounts",
+    "price": 65,
+    "oldPrice": 150,
+    "description": "Premium Hotmail/Outlook account with full access and security features.",
+    "features": [
+      "Full Account Access",
+      "Secure Login",
+      "Email Services",
+      "Cloud Storage",
+      "Calendar Integration",
+      "Office Online"
+    ],
+    "benefits": [
+      "Reliable email service",
+      "Secure account",
+      "Microsoft integration",
+      "Affordable price"
+    ],
+    "image": "/hotmail.png",
+    "popular": false,
+    "badge": null,
+    "duration": "Not specified",
+    "sold": 1951
+  },
+  {
+    "id": 10,
+    "slug": "super-grok-1m",
+    "name": "Sūpēr Grøk 1M",
+    "category": "AI Tools",
+    "price": 5000,
+    "oldPrice": 6000,
+    "description": "Advanced AI assistant with 1 million token capacity for 1 month.",
+    "features": [
+      "1M Token Capacity",
+      "1 Month Access",
+      "Advanced Reasoning",
+      "Real-time Information",
+      "Image Generation",
+      "X Platform Integration"
+    ],
+    "benefits": [
+      "High token limit",
+      "Advanced AI capabilities",
+      "Real-time data access",
+      "Premium experience"
+    ],
+    "image": "/super-grok.jpeg",
+    "popular": true,
+    "badge": "Premium",
+    "duration": "1 Month",
+    "sold": 1895
+  },
+  {
+    "id": 11,
+    "slug": "nordvpn-3m",
+    "name": "NordVPN 3M",
+    "category": "VPN",
+    "price": 950,
+    "oldPrice": 1400,
+    "description": "Premium VPN service with advanced security features for 3 months.",
+    "features": [
+      "3 Months Validity",
+      "Military-grade Encryption",
+      "5000+ Servers",
+      "No-logs Policy",
+      "Fast Speed",
+      "Multi-device Support"
+    ],
+    "benefits": [
+      "Online privacy",
+      "Secure browsing",
+      "Access global content",
+      "Reliable connection"
+    ],
+    "image": "/nordvpn.png",
+    "popular": false,
+    "badge": null,
+    "duration": "3 Months",
+    "sold": 949
+  },
+  {
+    "id": 12,
+    "slug": "leonardo-ai",
+    "name": "Leonardo AI – Essential Plan (1 Month)",
+    "category": "AI Tools",
+    "price": 650,
+    "oldPrice": 800,
+    "description": "AI image generation platform with essential features for 1 month.",
+    "features": [
+      "1 Month Access",
+      "AI Image Generation",
+      "Multiple Models",
+      "High Resolution",
+      "Custom Training",
+      "API Access"
+    ],
+    "benefits": [
+      "Create stunning AI art",
+      "Multiple style options",
+      "Professional quality",
+      "Affordable entry point"
+    ],
+    "image": "/leonardo.jfif",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1783
+  },
+  {
+    "id": 13,
+    "slug": "linkedin-premium-coupon",
+    "name": "LinkedIn Premium Coupon — 2 Months",
+    "category": "Productivity",
+    "price": 1650,
+    "oldPrice": 2600,
+    "description": "LinkedIn Premium coupon for 2 months with all career-boosting features.",
+    "features": [
+      "2 Months Validity",
       "InMail Credits",
       "Job Insights",
       "Learning Courses",
-      "Profile Visibility Boost",
-      "3 Months Access",
+      "Profile Visibility",
       "Salary Insights"
     ],
     "benefits": [
-      "Connect with anyone on LinkedIn",
-      "Get insights on job applications",
-      "Access professional courses",
+      "Boost career prospects",
+      "Connect with professionals",
+      "Access premium learning",
       "Stand out to recruiters"
     ],
-    "image": "/Linkedin.png",
+    "image": "/linkedin-premium.png",
+    "popular": true,
+    "badge": "Career Boost",
+    "duration": "2 Months",
+    "sold": 1859
+  },
+  {
+    "id": 14,
+    "slug": "lovable-pro-lite",
+    "name": "Lovable Pro Lite — 12 Months",
+    "category": "AI Tools",
+    "price": 2190,
+    "oldPrice": 6000,
+    "description": "Premium AI assistant with lite features for 12 months.",
+    "features": [
+      "12 Months Validity",
+      "AI-Powered Features",
+      "Smart Suggestions",
+      "Task Automation",
+      "Integration Support",
+      "Regular Updates"
+    ],
+    "benefits": [
+      "Long-term AI access",
+      "Boost productivity",
+      "Smart automation",
+      "Great annual value"
+    ],
+    "image": "/lovable.png",
     "popular": false,
-    "badge": "Career Boost"
+    "badge": null,
+    "duration": "1 Year",
+    "sold": 1837
+  },
+  {
+    "id": 15,
+    "slug": "openart",
+    "name": "OpenArt 4000 Credits",
+    "category": "AI Tools",
+    "price": 2390,
+    "oldPrice": 3000,
+    "description": "4000 credits for AI image generation on OpenArt platform for 1 month.",
+    "features": [
+      "4000 Credits",
+      "1 Month Validity",
+      "Multiple AI Models",
+      "High Quality Output",
+      "Fast Generation",
+      "Commercial Use"
+    ],
+    "benefits": [
+      "Generate thousands of images",
+      "Multiple AI models",
+      "Professional quality",
+      "Flexible usage"
+    ],
+    "image": "/openart.png",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1841
+  },
+  {
+    "id": 16,
+    "slug": "nordvpn-3-months",
+    "name": "NordVPN — 3 Months",
+    "category": "VPN",
+    "price": 947,
+    "oldPrice": 1097,
+    "description": "Premium VPN service for 3 months with enhanced security.",
+    "features": [
+      "3 Months Validity",
+      "Advanced Security",
+      "Global Server Network",
+      "No-logs Policy",
+      "Fast Connection",
+      "Device Protection"
+    ],
+    "benefits": [
+      "Secure online browsing",
+      "Access global content",
+      "Privacy protection",
+      "Reliable performance"
+    ],
+    "image": "/nordvpn.png",
+    "popular": false,
+    "badge": null,
+    "duration": "3 Months",
+    "sold": 923
+  },
+  {
+    "id": 17,
+    "slug": "capcut-7-days",
+    "name": "Capcut Pro 7 Days",
+    "category": "Video",
+    "price": 350,
+    "oldPrice": 400,
+    "description": "Short-term access to CapCut Pro premium features for 7 days.",
+    "features": [
+      "7 Days Access",
+      "Premium Editing Tools",
+      "No Watermark",
+      "AI Effects",
+      "Advanced Filters",
+      "HD Export"
+    ],
+    "benefits": [
+      "Try premium features",
+      "Perfect for projects",
+      "Professional editing",
+      "Affordable trial"
+    ],
+    "image": "/capcut.png",
+    "popular": false,
+    "badge": null,
+    "duration": "7 Days",
+    "sold": 2066
+  },
+  {
+    "id": 18,
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud Pro",
+    "category": "Design",
+    "price": 1500,
+    "oldPrice": 2500,
+    "description": "Full access to Adobe Creative Cloud suite for 1 month.",
+    "features": [
+      "1 Month Access",
+      "All Adobe Apps",
+      "Cloud Storage",
+      "Creative Assets",
+      "Collaboration Tools",
+      "Latest Updates"
+    ],
+    "benefits": [
+      "Professional creative tools",
+      "Industry standard software",
+      "Cloud integration",
+      "Complete creative suite"
+    ],
+    "image": "/adobe.jpeg",
+    "popular": true,
+    "badge": "Premium",
+    "duration": "1 Month",
+    "sold": 1903
+  },
+  {
+    "id": 19,
+    "slug": "notion-business",
+    "name": "Notion Business 3M",
+    "category": "Productivity",
+    "price": 1050,
+    "oldPrice": 1300,
+    "description": "Business plan for Notion with advanced collaboration features for 3 months.",
+    "features": [
+      "3 Months Validity",
+      "Advanced Collaboration",
+      "Unlimited Pages",
+      "API Access",
+      "Admin Tools",
+      "Priority Support"
+    ],
+    "benefits": [
+      "Team collaboration",
+      "Organized workflows",
+      "Advanced features",
+      "Business-grade tools"
+    ],
+    "image": "/notion.png",
+    "popular": false,
+    "badge": null,
+    "duration": "3 Months",
+    "sold": 1899
+  },
+  {
+    "id": 20,
+    "slug": "grok-super-unlimited",
+    "name": "Grok Super 1 month (unlimited)",
+    "category": "AI Tools",
+    "price": 5000,
+    "oldPrice": 8700,
+    "description": "Unlimited access to Grok AI with advanced features for 1 month.",
+    "features": [
+      "1 Month Access",
+      "Unlimited Usage",
+      "Advanced AI Models",
+      "Real-time Information",
+      "Image Generation",
+      "X Integration"
+    ],
+    "benefits": [
+      "No usage limits",
+      "Advanced AI capabilities",
+      "Real-time data access",
+      "Premium experience"
+    ],
+    "image": "/super-grok.jpeg",
+    "popular": true,
+    "badge": "Premium",
+    "duration": "1 Month",
+    "sold": 1720
+  },
+  {
+    "id": 21,
+    "slug": "cursor-pro",
+    "name": "Cursor Cursor Pro",
+    "category": "Developer Tools",
+    "price": 4500,
+    "oldPrice": 5500,
+    "description": "AI-powered code editor with advanced features for 1 month.",
+    "features": [
+      "1 Month Access",
+      "AI Code Completion",
+      "Smart Suggestions",
+      "Multi-file Editing",
+      "Terminal Integration",
+      "Git Integration"
+    ],
+    "benefits": [
+      "AI-powered coding",
+      "Faster development",
+      "Smart suggestions",
+      "Professional editor"
+    ],
+    "image": "/cursor.png",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1746
+  },
+  {
+    "id": 22,
+    "slug": "elevenlabs-130k",
+    "name": "ElevenLabs 130K Credits — 1 Month",
+    "category": "AI Tools",
+    "price": 2300,
+    "oldPrice": 3000,
+    "description": "130,000 credits for voice generation on ElevenLabs platform for 1 month.",
+    "features": [
+      "130K Credits",
+      "1 Month Validity",
+      "Natural Voice Generation",
+      "Multiple Voices",
+      "High Quality Audio",
+      "Commercial Use"
+    ],
+    "benefits": [
+      "Generate extensive voice content",
+      "Natural sounding voices",
+      "Professional quality",
+      "Flexible credit usage"
+    ],
+    "image": "/ElevenLab.png",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1746
+  },
+  {
+    "id": 23,
+    "slug": "fresh-proxy",
+    "name": "Fresh Proxy (All Countries)",
+    "category": "VPN",
+    "price": 800,
+    "oldPrice": 1200,
+    "description": "Premium proxy service covering all countries for 1 month.",
+    "features": [
+      "1 Month Access",
+      "All Countries",
+      "High Speed",
+      "Secure Connection",
+      "Multiple IPs",
+      "24/7 Support"
+    ],
+    "benefits": [
+      "Global proxy access",
+      "Secure browsing",
+      "High-speed connection",
+      "Reliable service"
+    ],
+    "image": "/proxy.jpeg",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 973
+  },
+  {
+    "id": 24,
+    "slug": "gmail-account",
+    "name": "Gmail Account — Monthly",
+    "category": "Accounts",
+    "price": 400,
+    "oldPrice": 680,
+    "description": "Premium Gmail account with full features for 1 month.",
+    "features": [
+      "1 Month Access",
+      "Full Account Access",
+      "Google Services",
+      "Cloud Storage",
+      "Security Features",
+      "Email Management"
+    ],
+    "benefits": [
+      "Reliable email service",
+      "Google ecosystem access",
+      "Secure account",
+      "Professional communication"
+    ],
+    "image": "/gmail.png",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 1730
+  },
+  {
+    "id": 25,
+    "slug": "n8n-starter",
+    "name": "n8n Starter 1 Year",
+    "category": "Automation",
+    "price": 9500,
+    "oldPrice": 70000,
+    "description": "Workflow automation platform with starter features for 1 year.",
+    "features": [
+      "1 Year Validity",
+      "Workflow Automation",
+      "500+ Integrations",
+      "Visual Editor",
+      "API Access",
+      "Cloud Hosting"
+    ],
+    "benefits": [
+      "Automate workflows",
+      "Huge integration library",
+      "Visual workflow builder",
+      "Great annual value"
+    ],
+    "image": "/n8n.png",
+    "popular": true,
+    "badge": "Best Value",
+    "duration": "1 Year",
+    "sold": 916
+  },
+  {
+    "id": 26,
+    "slug": "expressvpn",
+    "name": "ExpressVPN — Monthly",
+    "category": "VPN",
+    "price": 947,
+    "oldPrice": null,
+    "description": "Premium VPN service with top-tier security for 1 month.",
+    "features": [
+      "1 Month Access",
+      "Military-grade Encryption",
+      "3000+ Servers",
+      "No-logs Policy",
+      "Lightning Fast",
+      "Multi-device"
+    ],
+    "benefits": [
+      "Top-tier security",
+      "Fast connection speeds",
+      "Global server network",
+      "Trusted VPN provider"
+    ],
+    "image": "/expressvpn.png",
+    "popular": false,
+    "badge": null,
+    "duration": "1 Month",
+    "sold": 867
+  },
+  {
+    "id": 27,
+    "slug": "youtube-premium",
+    "name": "YouTube Premium — 3 Months",
+    "category": "Streaming",
+    "price": 1790,
+    "oldPrice": 2500,
+    "description": "Ad-free YouTube with premium features for 3 months.",
+    "features": [
+      "3 Months Validity",
+      "Ad-free Videos",
+      "Background Play",
+      "YouTube Music",
+      "Offline Downloads",
+      "Original Content"
+    ],
+    "benefits": [
+      "No ads interruption",
+      "Background playback",
+      "Music streaming included",
+      "Download for offline"
+    ],
+    "image": "/youtube.jpeg",
+    "popular": true,
+    "badge": "Popular",
+    "duration": "3 Months",
+    "sold": 944
   }
 ]

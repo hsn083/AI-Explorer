@@ -1,39 +1,40 @@
 export default function ProductCardSkeleton() {
   return (
-    <div className="glass rounded-2xl overflow-hidden h-full flex flex-col">
+    <div className="bg-white rounded-xl overflow-hidden flex flex-col sm:flex-row border border-gray-200 shadow-sm min-h-[140px] sm:min-h-[160px] md:min-h-[180px]">
       {/* Image Skeleton */}
-      <div className="h-32 sm:h-40 md:h-48 lg:h-56 bg-gradient-to-br from-blue-500/20 to-purple-500/20 animate-pulse" />
+      <div className="relative w-full sm:w-[150px] md:w-[180px] h-[140px] sm:h-[160px] md:h-[180px] bg-white flex items-center justify-center p-3 flex-shrink-0 border-r border-gray-200">
+        <div className="w-full h-full bg-gray-100 rounded animate-pulse" />
+      </div>
       
       {/* Content Skeleton */}
-      <div className="p-3 md:p-5 flex flex-col flex-1">
-        {/* Category Skeleton */}
-        <div className="h-3 w-16 bg-white/10 rounded animate-pulse mb-2" />
+      <div className="flex-1 p-3 sm:p-4 flex flex-col justify-between">
+        {/* Top Section */}
+        <div>
+          {/* Category Skeleton */}
+          <div className="h-3 w-16 bg-gray-200 rounded animate-pulse mb-2" />
+          
+          {/* Name Skeleton */}
+          <div className="h-5 w-full bg-gray-200 rounded animate-pulse mb-2" />
+          <div className="h-5 w-3/4 bg-gray-200 rounded animate-pulse mb-3" />
+          
+          {/* Duration Skeleton */}
+          <div className="h-3 w-20 bg-gray-200 rounded animate-pulse mb-2" />
+        </div>
         
-        {/* Name Skeleton */}
-        <div className="h-5 w-full bg-white/10 rounded animate-pulse mb-2" />
-        <div className="h-5 w-3/4 bg-white/10 rounded animate-pulse mb-3" />
-        
-        {/* Rating Skeleton */}
-        <div className="flex items-center gap-2 mb-3">
-          <div className="flex gap-1">
-            {[...Array(5)].map((_, i) => (
-              <div key={i} className="w-3 h-3 md:w-4 md:h-4 bg-white/10 rounded animate-pulse" />
-            ))}
+        {/* Bottom Section */}
+        <div className="flex items-end justify-between gap-2">
+          {/* Price Skeleton */}
+          <div>
+            <div className="h-6 w-24 bg-gray-200 rounded animate-pulse mb-1" />
+            <div className="h-4 w-16 bg-gray-200 rounded animate-pulse" />
           </div>
-          <div className="h-3 w-12 bg-white/10 rounded animate-pulse" />
+          
+          {/* Buttons Skeleton */}
+          <div className="flex gap-2">
+            <div className="h-9 sm:h-10 w-16 bg-gray-200 rounded-lg animate-pulse" />
+            <div className="h-9 sm:h-10 w-16 bg-gray-200 rounded-lg animate-pulse" />
+          </div>
         </div>
-        
-        {/* Price Skeleton */}
-        <div className="h-6 w-24 bg-white/10 rounded animate-pulse mb-4" />
-        
-        {/* Description Skeleton */}
-        <div className="hidden md:block space-y-2 mb-4 flex-1">
-          <div className="h-3 w-full bg-white/10 rounded animate-pulse" />
-          <div className="h-3 w-5/6 bg-white/10 rounded animate-pulse" />
-        </div>
-        
-        {/* Button Skeleton */}
-        <div className="h-10 sm:h-11 md:h-12 bg-white/10 rounded-xl animate-pulse mt-auto" />
       </div>
     </div>
   );

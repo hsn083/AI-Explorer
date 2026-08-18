@@ -5,26 +5,25 @@ export interface Product {
   category: string;
   price: number;
   oldPrice: number | null;
-  rating: number;
-  reviewCount: number;
   description: string;
   features: string[];
   benefits: string[];
   image: string;
   popular: boolean;
   badge: string | null;
+  duration: string;
+  sold: number;
 }
 
 export interface Review {
   id: number;
   productId: number;
   customerName: string;
-  avatar: string;
   rating: number;
   reviewText: string;
   date: string;
-  verifiedBuyer: boolean;
-  helpful: number;
+  verifiedPurchase: boolean;
+  isDemo: boolean;
 }
 
 export interface Category {

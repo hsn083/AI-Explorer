@@ -18,18 +18,18 @@ export default function TermsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl font-bold text-white mb-8">Terms & Conditions</h1>
+          <h1 className="text-4xl font-bold text-black mb-8">Terms & Conditions</h1>
           
           <div className="glass rounded-3xl p-8 space-y-6">
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Introduction</h2>
               <p className="text-gray-400">
                 Welcome to AI Explorer. By using our website and services, you agree to these Terms & Conditions.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Services</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Services</h2>
               <p className="text-gray-400 mb-4">We provide:</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
                 <li>Digital subscription accounts and tools</li>
@@ -39,7 +39,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Orders and Payment</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Orders and Payment</h2>
               <p className="text-gray-400 mb-4">
                 All orders are placed through WhatsApp. Payment is required before delivery. 
                 We accept various payment methods including JazzCash, EasyPaisa, Bank Transfer, and USDT.
@@ -50,7 +50,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Account Usage</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Account Usage</h2>
               <p className="text-gray-400 mb-4">
                 Customers are responsible for:
               </p>
@@ -63,7 +63,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Refund Policy</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Refund Policy</h2>
               <p className="text-gray-400 mb-4">
                 Refunds are handled on a case-by-case basis. We may issue refunds if:
               </p>
@@ -78,7 +78,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Warranty</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Warranty</h2>
               <p className="text-gray-400">
                 We provide warranty on all products. The warranty period varies by product. 
                 If issues arise during the warranty period, we will resolve them free of charge.
@@ -86,7 +86,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Limitation of Liability</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Limitation of Liability</h2>
               <p className="text-gray-400">
                 We are not liable for any damages arising from the use of our services, 
                 including but not limited to direct, indirect, incidental, or consequential damages.
@@ -94,7 +94,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Changes to Terms</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Changes to Terms</h2>
               <p className="text-gray-400">
                 We reserve the right to modify these terms at any time. 
                 Continued use of our services constitutes acceptance of any changes.
@@ -102,7 +102,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">Contact Us</h2>
+              <h2 className="text-2xl font-bold text-black mb-4">Contact Us</h2>
               <p className="text-gray-400">
                 For questions about these terms, please contact us:
               </p>

@@ -3,15 +3,18 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
 import ClientProviders from "@/components/ClientProviders";
+import AnnouncementBar from "@/components/AnnouncementBar";
 
 const Navbar = dynamic(() => import("@/components/Navbar"), {
   ssr: true,
-  loading: () => <nav className="fixed top-0 left-0 right-0 z-50 h-16 md:h-[72px] lg:h-20 bg-[#090909]/95 backdrop-blur-xl border-b border-white/[0.08]" />
+  loading: () => <nav className="fixed top-[32px] left-0 right-0 z-[9998] h-[64px] md:h-[70px] lg:h-[72px] glass-strong border-b border-black/[0.08]" />
 });
 
 const Footer = dynamic(() => import("@/components/Footer"), {
   ssr: true,
 });
+
+const FloatingWhatsApp = dynamic(() => import("@/components/FloatingWhatsApp"));
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,10 +55,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AnnouncementBar />
+        <Navbar />
         <ClientProviders>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen pt-[138px] md:pt-[142px] lg:pt-[146px]">{children}</main>
           <Footer />
+          <FloatingWhatsApp />
         </ClientProviders>
       </body>
     </html>

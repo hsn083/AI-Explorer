@@ -21,7 +21,7 @@ export default function CategoriesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">Browse Categories</h1>
+          <h1 className="text-4xl font-bold text-black mb-4">Browse Categories</h1>
           <p className="text-gray-400">Find the perfect digital tool for your needs</p>
         </motion.div>
 
@@ -52,10 +52,10 @@ export default function CategoriesPage() {
                           loading="lazy"
                         />
                       ) : (
-                        <Bot className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                        <Bot className="w-8 h-8 sm:w-10 sm:h-10 text-black" />
                       )}
                     </div>
-                    <h3 className="text-white font-bold text-lg sm:text-2xl mb-2 sm:mb-3">{category.name}</h3>
+                    <h3 className="text-black font-bold text-lg sm:text-2xl mb-2 sm:mb-3">{category.name}</h3>
                     <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 line-clamp-2">{category.description}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-neon-blue font-medium text-sm sm:text-base">{productCount} Products</span>
@@ -77,7 +77,7 @@ export default function CategoriesPage() {
         >
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-white font-semibold hover:bg-white/10 transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-black font-semibold hover:bg-white/10 transition-colors"
           >
             View All Products
           </Link>

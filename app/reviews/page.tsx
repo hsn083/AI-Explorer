@@ -19,7 +19,7 @@ export default function ReviewsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">Customer Reviews</h1>
+          <h1 className="text-4xl font-bold text-black mb-4">Customer Reviews</h1>
           <p className="text-gray-400">See what our customers are saying about us</p>
         </motion.div>
 
@@ -31,15 +31,15 @@ export default function ReviewsPage() {
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
         >
           <div className="glass rounded-2xl p-6 text-center">
-            <div className="text-4xl font-bold text-white mb-2">5.0</div>
+            <div className="text-4xl font-bold text-black mb-2">5.0</div>
             <div className="text-gray-400">Average Rating</div>
           </div>
           <div className="glass rounded-2xl p-6 text-center">
-            <div className="text-4xl font-bold text-white mb-2">{reviews.length}+</div>
+            <div className="text-4xl font-bold text-black mb-2">{reviews.length}+</div>
             <div className="text-gray-400">Reviews</div>
           </div>
           <div className="glass rounded-2xl p-6 text-center">
-            <div className="text-4xl font-bold text-white mb-2">100%</div>
+            <div className="text-4xl font-bold text-black mb-2">100%</div>
             <div className="text-gray-400">Verified Buyers</div>
           </div>
         </motion.div>
@@ -51,18 +51,7 @@ export default function ReviewsPage() {
           ))}
         </div>
 
-        {/* Disclaimer */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mt-12 glass rounded-2xl p-6 text-center"
-        >
-          <p className="text-gray-400 text-sm">
-            <strong className="text-white">Note:</strong> These are sample/demo reviews for display purposes. 
-            Real customer reviews will be added as we receive them.
-          </p>
-        </motion.div>
+      
       </div>
     </main>
   );

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa6';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 import settings from '@/data/settings.json';
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen pt-24 pb-20">
+    <main className="min-h-screen pt-24 pb-20" style={{ backgroundColor: '#F5F1E8' }}>
       <div className="container mx-auto px-4">
 
         {/* Header */}
@@ -32,10 +32,10 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-black mb-4">
             Contact Us
           </h1>
-          <p className="text-gray-400">
+          <p className="text-gray-600">
             Get in touch with our team
           </p>
         </motion.div>
@@ -49,9 +49,9 @@ export default function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <div className="glass rounded-3xl p-8 h-full">
+            <div className="bg-white rounded-[24px] p-8 h-full border border-[#E8E6E0] shadow-sm">
 
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-[28px] font-bold mb-6" style={{ color: '#111111' }}>
                 Contact Information
               </h2>
 
@@ -63,11 +63,11 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-semibold">
+                    <h3 className="font-semibold mb-1" style={{ color: '#555555', fontSize: '14px' }}>
                       WhatsApp
                     </h3>
 
-                    <p className="text-gray-400">
+                    <p className="mb-2" style={{ color: '#222222', fontSize: '16px', fontWeight: '500' }}>
                       {settings.whatsappNumber}
                     </p>
 
@@ -75,7 +75,8 @@ export default function ContactPage() {
                       href={settings.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neon-blue hover:underline text-sm"
+                      className="text-sm hover:underline"
+                      style={{ color: '#25D366' }}
                     >
                       Chat on WhatsApp
                     </a>
@@ -89,11 +90,11 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-semibold">
+                    <h3 className="font-semibold mb-1" style={{ color: '#555555', fontSize: '14px' }}>
                       Email
                     </h3>
 
-                    <p className="text-gray-400">
+                    <p style={{ color: '#222222', fontSize: '16px', fontWeight: '500' }}>
                       {settings.email}
                     </p>
                   </div>
@@ -106,11 +107,11 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-semibold">
+                    <h3 className="font-semibold mb-1" style={{ color: '#555555', fontSize: '14px' }}>
                       Business Hours
                     </h3>
 
-                    <p className="text-gray-400">
+                    <p style={{ color: '#222222', fontSize: '16px', fontWeight: '500' }}>
                       {settings.businessHours}
                     </p>
                   </div>
@@ -123,11 +124,11 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-semibold">
+                    <h3 className="font-semibold mb-1" style={{ color: '#555555', fontSize: '14px' }}>
                       Location
                     </h3>
 
-                    <p className="text-gray-400">
+                    <p style={{ color: '#222222', fontSize: '16px', fontWeight: '500' }}>
                       Sheikhupura, Pakistan
                     </p>
                   </div>
@@ -136,16 +137,16 @@ export default function ContactPage() {
               </div>
 
 
-              <div className="mt-8 pt-6 border-t border-white/10">
+              <div className="mt-8 pt-6 border-t border-[#E8E6E0]">
 
                 <a
                   href={settings.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full px-6 py-4 rounded-xl text-white font-semibold hover:opacity-90 transition-opacity"
+                  className="flex items-center justify-center gap-2 w-full px-6 py-4 rounded-[14px] text-white font-semibold hover:opacity-90 transition-opacity"
                   style={{ backgroundColor: '#25D366' }}
                 >
-                  <FaWhatsapp className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   Message on WhatsApp
                 </a>
 
@@ -163,9 +164,9 @@ export default function ContactPage() {
             transition={{ delay: 0.3 }}
           >
 
-            <div className="glass rounded-3xl p-8 h-full">
+            <div className="bg-white rounded-[24px] p-8 h-full border border-[#E8E6E0] shadow-sm">
 
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-[28px] font-bold mb-6" style={{ color: '#111111' }}>
                 Send us a Message
               </h2>
 
@@ -177,7 +178,8 @@ export default function ContactPage() {
                   name="name"
                   required
                   placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-xl bg-black/50 text-white border border-white/10"
+                  className="w-full px-4 py-3 rounded-[14px] border focus:outline-none focus:ring-2 focus:ring-[#111111]/20"
+                  style={{ backgroundColor: '#F7F7F5', borderColor: '#E5E5E5', color: '#111111', fontSize: '16px' }}
                 />
 
 
@@ -186,7 +188,8 @@ export default function ContactPage() {
                   name="email"
                   required
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-xl bg-black/50 text-white border border-white/10"
+                  className="w-full px-4 py-3 rounded-[14px] border focus:outline-none focus:ring-2 focus:ring-[#111111]/20"
+                  style={{ backgroundColor: '#F7F7F5', borderColor: '#E5E5E5', color: '#111111', fontSize: '16px' }}
                 />
 
 
@@ -195,13 +198,15 @@ export default function ContactPage() {
                   required
                   rows={5}
                   placeholder="Your message..."
-                  className="w-full px-4 py-3 rounded-xl bg-black/50 text-white border border-white/10 resize-none"
+                  className="w-full px-4 py-3 rounded-[14px] border focus:outline-none focus:ring-2 focus:ring-[#111111]/20 resize-none"
+                  style={{ backgroundColor: '#F7F7F5', borderColor: '#E5E5E5', color: '#111111', fontSize: '16px' }}
                 />
 
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold"
+                  className="w-full px-6 py-4 rounded-[14px] font-semibold hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#111111', color: '#DFFF00' }}
                 >
                   Send Message
                 </button>
@@ -225,9 +230,9 @@ export default function ContactPage() {
           className="mt-12 max-w-6xl mx-auto"
         >
 
-          <div className="glass rounded-3xl p-8">
+          <div className="bg-white rounded-[24px] p-8 border border-[#E8E6E0] shadow-sm">
 
-            <h2 className="text-2xl font-bold text-white mb-6">
+            <h2 className="text-[28px] font-bold mb-6" style={{ color: '#111111' }}>
               Our Location
             </h2>
 

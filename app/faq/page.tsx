@@ -16,7 +16,7 @@ export default function FAQPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h1>
+          <h1 className="text-4xl font-bold text-black mb-4">Frequently Asked Questions</h1>
           <p className="text-gray-400">Find answers to common questions about our services</p>
         </motion.div>
 
@@ -34,7 +34,7 @@ export default function FAQPage() {
                   onClick={() => setOpenFaq(openFaq === item.id ? null : item.id)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
                 >
-                  <span className="text-white font-semibold text-lg">{item.question}</span>
+                  <span className="text-grey font-semibold text-lg">{item.question}</span>
                   <motion.span
                     animate={{ rotate: openFaq === item.id ? 180 : 0 }}
                     className="text-neon-blue text-2xl"
@@ -64,7 +64,7 @@ export default function FAQPage() {
           className="mt-16 text-center"
         >
           <div className="glass rounded-3xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-white font-bold text-2xl mb-4">Still have questions?</h3>
+            <h3 className="text-grey font-bold text-2xl mb-4">Still have questions?</h3>
             <p className="text-gray-400 mb-6">
               Our support team is available 24/7 to help you with any questions.
             </p>

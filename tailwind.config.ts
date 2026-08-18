@@ -11,44 +11,46 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        neon: {
-          blue: "#00d4ff",
-          purple: "#a855f7",
-          pink: "#ec4899",
+        // Premium theme colors
+        ivory: {
+          DEFAULT: "#F5F1E8",
         },
         lime: {
-          400: "#A3E635",
-          500: "#84CC16",
-          600: "#65A30D",
+          DEFAULT: "#DFFF00",
+          hover: "#E8FF2A",
+        },
+        charcoal: {
+          DEFAULT: "#111111",
+        },
+        gray: {
+          50: "#FAFAFA",
+          100: "#F5F5F5",
+          200: "#E5E5E5",
+          300: "#D4D4D4",
+          400: "#A3A3A3",
+          500: "#737373",
+          600: "#555555",
+          700: "#404040",
+          800: "#262626",
+          900: "#171717",
+          950: "#0A0A0A",
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "neon-gradient": "linear-gradient(135deg, #00d4ff 0%, #a855f7 50%, #ec4899 100%)",
       },
       animation: {
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "float": "float 3s ease-in-out infinite",
         "float-slow": "float 4s ease-in-out infinite",
         "float-delayed": "float 3s ease-in-out 1s infinite",
-        "glow": "glow 2s ease-in-out infinite alternate",
-        "orbit": "orbit 20s linear infinite",
-        "orbit-reverse": "orbit 25s linear infinite reverse",
         "spin-slow": "spin 12s linear infinite",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-20px)" },
-        },
-        glow: {
-          "0%": { boxShadow: "0 0 5px #00d4ff, 0 0 10px #00d4ff" },
-          "100%": { boxShadow: "0 0 20px #a855f7, 0 0 30px #a855f7" },
-        },
-        orbit: {
-          "0%": { transform: "rotate(0deg) translateX(150px) rotate(0deg)" },
-          "100%": { transform: "rotate(360deg) translateX(150px) rotate(-360deg)" },
         },
       },
     },
