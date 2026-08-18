@@ -72,22 +72,6 @@ export default function Navbar() {
           {/* Top Row: Logo and Reviews */}
           <div className="flex items-center justify-between h-[50px]">
             <Link href="/" className="flex items-center gap-2 group whitespace-nowrap flex-shrink-0">
-              <div
-                className="flex items-center justify-center flex-shrink-0"
-                style={{
-                  filter: 'drop-shadow(0 0 8px rgba(163,230,53,.25))'
-                }}
-              >
-                <Image
-                  src="/logo.png"
-                  alt="AI Explorer Logo"
-                  width={44}
-                  height={44}
-                  className="w-9 h-9 object-contain"
-                  priority
-                />
-              </div>
-
               {/* AI EXPLORER Text - Mobile */}
               <div className="flex items-center">
                 <span className="font-bold text-lg tracking-wide whitespace-nowrap leading-none">
