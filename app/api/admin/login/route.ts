@@ -64,15 +64,19 @@ export async function POST(request: NextRequest) {
     const response = NextResponse.json({ success: true });
     
     // Set cookie on the response
+    // For custom domains on HTTPS, always use secure: true
+    // No domain attribute set - browser will use current domain automatically
     response.cookies.set('admin_session', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: true, // Always true for HTTPS (custom domain)
       sameSite: 'lax',
       maxAge: 7 * 24 * 60 * 60,
       path: '/',
+      // domain: undefined // Explicitly not setting domain to allow browser to use current domain
     });
     
     console.log('Cookie set on response: admin_session');
+    console.log('Cookie options: httpOnly=true, secure=true, sameSite=lax, path=/');
 
     return response;
   } catch (error) {
