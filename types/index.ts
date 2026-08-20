@@ -1,10 +1,12 @@
 export interface Product {
   id: number;
+  _id?: string;
   slug: string;
   name: string;
   category: string;
   price: number;
   oldPrice: number | null;
+  originalPrice?: number;
   description: string;
   features: string[];
   benefits: string[];
@@ -13,6 +15,7 @@ export interface Product {
   badge: string | null;
   duration: string;
   sold: number;
+  soldCount?: number;
 }
 
 export interface Review {

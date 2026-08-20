@@ -1,20 +1,21 @@
-import products from '@/data/products.json';
-
 export interface Product {
-  id: number;
+  _id?: string;
+  id?: number;
   slug: string;
   name: string;
   category: string;
   price: number;
-  oldPrice: number | null;
+  oldPrice?: number | null;
+  originalPrice?: number | null;
   description: string;
   features: string[];
   benefits: string[];
   image: string;
   popular: boolean;
-  badge: string | null;
+  badge?: string | null;
   duration: string;
-  sold: number;
+  sold?: number;
+  soldCount?: number;
 }
 
 // Normalize text for search (remove special chars, lowercase)
@@ -72,35 +73,47 @@ function calculateRelevanceScore(query: string, product: Product): number {
   if (normalizedDescription.includes(normalizedQuery)) score += 20;
   
   // Features/benefits match
-  const allFeatures = [...product.features, ...product.benefits].join(' ');
+  const allFeatures = [...(product.features || []), ...(product.benefits || [])].join(' ');
   if (normalizeText(allFeatures).includes(normalizedQuery)) score += 15;
   
   return score;
 }
 
-export function searchProducts(query: string, limit: number = 8): Product[] {
+export async function searchProducts(query: string, limit: number = 8): Promise<Product[]> {
   if (!query || query.trim().length < 1) {
     return [];
   }
   
-  const normalizedQuery = query.trim();
-  
-  // Calculate scores for all products
-  const scoredProducts = products.map(product => ({
-    product,
-    score: calculateRelevanceScore(normalizedQuery, product)
-  }));
-  
-  // Filter products with score > 0 and sort by score
-  const filtered = scoredProducts
-    .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
-    .map(item => item.product);
-  
-  return filtered;
+  try {
+    const response = await fetch(`/api/products?search=${encodeURIComponent(query.trim())}`);
+    const products = await response.json();
+    
+    // Calculate scores for all products
+    const scoredProducts = products.map((product: Product) => ({
+      product,
+      score: calculateRelevanceScore(query.trim(), product)
+    }));
+    
+    // Filter products with score > 0 and sort by score
+    const filtered = scoredProducts
+      .filter((item: any) => item.score > 0)
+      .sort((a: any, b: any) => b.score - a.score)
+      .slice(0, limit)
+      .map((item: any) => item.product);
+    
+    return filtered;
+  } catch (error) {
+    console.error('Error searching products:', error);
+    return [];
+  }
 }
 
-export function getAllProducts(): Product[] {
-  return products;
+export async function getAllProducts(): Promise<Product[]> {
+  try {
+    const response = await fetch('/api/products');
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    return [];
+  }
 }

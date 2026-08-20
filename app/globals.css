@@ -106,3 +106,22 @@ html {
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
+
+/* Admin-specific styles to prevent conflicts */
+.admin-layout {
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1023px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+}

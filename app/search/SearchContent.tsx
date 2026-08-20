@@ -10,13 +10,18 @@ export default function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const [results, setResults] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (query.trim()) {
-      const searchResults = searchProducts(query.trim());
-      setResults(searchResults);
+      setLoading(true);
+      searchProducts(query.trim()).then(searchResults => {
+        setResults(searchResults);
+        setLoading(false);
+      });
     } else {
       setResults([]);
+      setLoading(false);
     }
   }, [query]);
 
@@ -36,7 +41,11 @@ export default function SearchContent() {
           </p>
         </motion.div>
 
-        {results.length > 0 ? (
+        {loading ? (
+          <div className="flex items-center justify-center py-16">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-charcoal"></div>
+          </div>
+        ) : results.length > 0 ? (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,7 +54,7 @@ export default function SearchContent() {
           >
             {results.map((product, index) => (
               <ProductCard
-                key={product.id}
+                key={product._id || product.id}
                 product={product}
                 index={index}
               />

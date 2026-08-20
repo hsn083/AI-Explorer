@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, use } from 'react';
+import { useState, use, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Star, ShieldCheck, Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -8,16 +8,54 @@ import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import ReviewCard from '@/components/ReviewCard';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
-import products from '@/data/products.json';
 import reviews from '@/data/reviews.json';
 import faq from '@/data/faq.json';
 import { getProductRating } from '@/utils/reviews';
 
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
-  const product = products.find(p => p.slug === id);
+  const [product, setProduct] = useState<any>(null);
+  const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [visibleReviews, setVisibleReviews] = useState(10);
+
+  useEffect(() => {
+    if (id) {
+      fetchProduct(id);
+    }
+  }, [id]);
+
+  const fetchProduct = async (productId: string) => {
+    try {
+      const response = await fetch(`/api/products/${productId}`);
+      const data = await response.json();
+      
+      if (!data || data.error) {
+        setLoading(false);
+        return;
+      }
+
+      setProduct(data);
+
+      // Fetch related products
+      const relatedResponse = await fetch(`/api/products?category=${encodeURIComponent(data.category)}`);
+      const relatedData = await relatedResponse.json();
+      setRelatedProducts(relatedData.filter((p: any) => (p._id || p.id) !== (data._id || data.id)).slice(0, 4));
+    } catch (error) {
+      console.error('Error fetching product:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen pt-24 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-charcoal"></div>
+      </div>
+    );
+  }
 
   if (!product) {
     return (
@@ -27,15 +65,22 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
     );
   }
 
+  // Handle both MongoDB and JSON data structures
+  const productId = product._id || product.id;
+  const oldPrice = product.originalPrice || product.oldPrice;
+  const soldCount = product.soldCount || product.sold;
+
   const productReviews = reviews
-    .filter(r => r.productId === product.id)
+    .filter(r => r.productId === productId)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, visibleReviews);
-  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
-  const discount = product.oldPrice
-    ? Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)
+  
+  const totalReviews = reviews.filter(r => r.productId === productId).length;
+  
+  const discount = oldPrice
+    ? Math.round(((oldPrice - product.price) / oldPrice) * 100)
     : 0;
-  const { rating, count } = getProductRating(product.id);
+  const { rating, count } = getProductRating(productId);
 
   const handleWhatsAppOrder = () => {
     const message = `Assalamualaikum! I'm interested in buying "${product.name}" from AI Explorer. Please provide details.`;
@@ -43,7 +88,6 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
     window.open(whatsappUrl, '_blank');
   };
 
-  const totalReviews = reviews.filter(r => r.productId === product.id).length;
   const hasMoreReviews = visibleReviews < totalReviews;
 
   const handleLoadMore = () => {
@@ -89,7 +133,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             {/* Sold Badge */}
             <div className="mb-4">
               <span className="inline-block px-3 py-1 rounded-full bg-gray-900 text-white text-sm font-medium">
-                {product.sold.toLocaleString()} Sold
+                {soldCount.toLocaleString()} Sold
               </span>
             </div>
 
@@ -119,8 +163,8 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             {/* Price */}
             <div className="flex items-center gap-4 mb-6">
               <span className="text-4xl font-bold text-gray-900">Rs. {product.price.toLocaleString()}</span>
-              {product.oldPrice && (
-                <span className="text-2xl text-gray-400 line-through">Rs. {product.oldPrice.toLocaleString()}</span>
+              {oldPrice && (
+                <span className="text-2xl text-gray-400 line-through">Rs. {oldPrice.toLocaleString()}</span>
               )}
             </div>
 
@@ -151,7 +195,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
         >
           <h2 className="text-3xl font-bold text-charcoal mb-6">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {product.features.map((feature, index) => (
+            {product.features?.map((feature: string, index: number) => (
               <div key={index} className="flex items-center gap-3">
                 <Check className="w-6 h-6 text-lime-600 flex-shrink-0" />
                 <span className="text-gray-800">{feature}</span>
@@ -169,7 +213,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
         >
           <h2 className="text-3xl font-bold text-charcoal mb-6">Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {product.benefits.map((benefit, index) => (
+            {product.benefits.map((benefit: string, index: number) => (
               <div key={index} className="flex items-center gap-3">
                 <Check className="w-6 h-6 text-lime-600 flex-shrink-0" />
                 <span className="text-gray-800">{benefit}</span>
@@ -261,7 +305,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             <h2 className="text-3xl font-bold text-charcoal mb-6">Related Products</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
               {relatedProducts.map((product, index) => (
-                <ProductCard key={product.id} product={product} index={index} layout="vertical" />
+                <ProductCard key={product._id || product.id} product={product} index={index} layout="vertical" />
               ))}
             </div>
           </motion.div>

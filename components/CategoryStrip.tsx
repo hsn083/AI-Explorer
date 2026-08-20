@@ -1,32 +1,37 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
-const productIcons = [
-  { name: 'ChatGPT', image: '/ChatGPT.png' },
-  { name: 'CapCut', image: '/capcut.png' },
-  { name: 'HeyGen', image: '/heygen.png' },
-  { name: 'Cursor', image: '/cursor.png' },
-  { name: 'Leonardo', image: '/leonardo.jfif' },
-  { name: 'OpenArt', image: '/openart.png' },
-  { name: 'VocoGen', image: '/vocogen.png' },
-  { name: 'n8n', image: '/n8n.png' },
-  { name: 'Lovable', image: '/lovable.png' },
-  { name: 'Notion', image: '/notion.png' },
-  { name: 'Adobe', image: '/adobe.jpeg' },
-  { name: 'Canva', image: '/Canva.jpeg' },
-  { name: 'ElevenLabs', image: '/ElevenLab.png' },
-  { name: 'YouTube', image: '/youtube.jpeg' },
-  { name: 'Super Grok', image: '/super-grok.jpeg' },
-  { name: 'Jio Gemini', image: '/jio-gemini.jpeg' },
-  { name: 'Gemini', image: '/Gemini.png' },
-  { name: 'Groq', image: '/Groq.png' },
-  { name: 'Veo', image: '/Veo3.png' },
-  { name: 'Coursera', image: '/Coursera.png' },
-];
+interface ProductIcon {
+  name: string;
+  image: string;
+}
 
 export default function CategoryStrip() {
+  const [productIcons, setProductIcons] = useState<ProductIcon[]>([
+    { name: 'ChatGPT', image: '/ChatGPT.png' },
+    { name: 'CapCut', image: '/capcut.png' },
+    { name: 'HeyGen', image: '/heygen.png' },
+    { name: 'Cursor', image: '/cursor.png' },
+    { name: 'Leonardo', image: '/leonardo.jfif' },
+    { name: 'OpenArt', image: '/openart.png' },
+    { name: 'VocoGen', image: '/vocogen.png' },
+    { name: 'n8n', image: '/n8n.png' },
+    { name: 'Lovable', image: '/lovable.png' },
+    { name: 'Notion', image: '/notion.png' },
+    { name: 'Adobe', image: '/adobe.jpeg' },
+    { name: 'Canva', image: '/Canva.jpeg' },
+    { name: 'ElevenLabs', image: '/ElevenLab.png' },
+    { name: 'YouTube', image: '/youtube.jpeg' },
+    { name: 'Super Grok', image: '/super-grok.jpeg' },
+    { name: 'Jio Gemini', image: '/jio-gemini.jpeg' },
+    { name: 'Gemini', image: '/Gemini.png' },
+    { name: 'Groq', image: '/Groq.png' },
+    { name: 'Veo', image: '/Veo3.png' },
+    { name: 'Coursera', image: '/Coursera.png' },
+  ]);
+
   const duplicatedIcons = [...productIcons, ...productIcons];
   const trackRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
@@ -64,7 +69,7 @@ export default function CategoryStrip() {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  }, [productIcons]);
 
   return (
     <section className="py-3 md:py-4 lg:py-5 px-4 overflow-hidden">

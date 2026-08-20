@@ -28,9 +28,9 @@ export default function SearchAutocomplete({
 
   // Search products with debounce
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setTimeout(async () => {
       if (query.trim().length >= 1) {
-        const searchResults = searchProducts(query.trim(), 8);
+        const searchResults = await searchProducts(query.trim(), 8);
         setResults(searchResults);
         setIsOpen(true);
         setSelectedIndex(-1);

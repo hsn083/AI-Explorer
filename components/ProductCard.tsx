@@ -19,11 +19,16 @@ export default function ProductCard({
   index = 0,
   layout = 'horizontal',
 }: ProductCardProps) {
-  const discount = product.oldPrice
-    ? Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)
+  // Handle both MongoDB and JSON product structures
+  const productId = product._id || product.id;
+  const oldPrice = product.originalPrice || product.oldPrice;
+  const soldCount = product.soldCount || product.sold;
+  
+  const discount = oldPrice
+    ? Math.round(((oldPrice - product.price) / oldPrice) * 100)
     : 0;
 
-  const { rating, count } = getProductRating(product.id);
+  const { rating, count } = getProductRating(typeof productId === 'number' ? productId : parseInt(productId));
 
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -75,9 +80,9 @@ export default function ProductCard({
             <div className="p-2 sm:p-3 md:p-4 flex flex-col flex-1">
 
               {/* Sold Badge */}
-              {product.sold && (
+              {soldCount && (
                 <div className="text-[10px] sm:text-[11px] md:text-xs text-gray-600 mb-0.5">
-                  <span className="font-semibold">{product.sold.toLocaleString()}</span> Sold
+                  <span className="font-semibold">{soldCount.toLocaleString()}</span> Sold
                 </div>
               )}
 
@@ -100,9 +105,9 @@ export default function ProductCard({
                   Rs. {product.price}
                 </div>
 
-                {product.oldPrice && (
+                {oldPrice && (
                   <div className="text-[10px] sm:text-[11px] md:text-xs text-gray-500 line-through">
-                    Rs. {product.oldPrice}
+                    Rs. {oldPrice}
                   </div>
                 )}
               </div>
@@ -184,9 +189,9 @@ export default function ProductCard({
             {/* Top Section */}
             <div className="flex-1">
               {/* Sold Badge */}
-              {product.sold && (
+              {soldCount && (
                 <div className="text-[9px] sm:text-[10px] md:text-xs text-gray-600 mb-0.5">
-                  <span className="font-semibold">{product.sold.toLocaleString()}</span> Sold
+                  <span className="font-semibold">{soldCount.toLocaleString()}</span> Sold
                 </div>
               )}
 
@@ -209,9 +214,9 @@ export default function ProductCard({
                   Rs. {product.price}
                 </div>
 
-                {product.oldPrice && (
+                {oldPrice && (
                   <div className="text-[9px] sm:text-[10px] md:text-xs text-gray-500 line-through">
-                    Rs. {product.oldPrice}
+                    Rs. {oldPrice}
                   </div>
                 )}
               </div>

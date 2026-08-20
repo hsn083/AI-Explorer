@@ -6,12 +6,21 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed:categories": "ts-node scripts/seed-categories.ts",
+    "seed:products": "ts-node scripts/seed-products.ts",
+    "seed:all": "ts-node scripts/seed-categories.ts && ts-node scripts/seed-products.ts"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "clsx": "^2.1.0",
+    "dotenv": "^17.4.2",
     "framer-motion": "^11.0.0",
+    "jose": "^6.2.9",
+    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^0.344.0",
+    "mongodb": "^7.5.0",
+    "mongoose": "^9.9.3",
     "next": "^16.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -20,6 +29,8 @@
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -28,6 +39,7 @@
     "eslint-config-next": "15.0.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }

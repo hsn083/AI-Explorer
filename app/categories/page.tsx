@@ -1,16 +1,53 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Bot } from 'lucide-react';
-import categories from '@/data/categories.json';
-import products from '@/data/products.json';
 
 export default function CategoriesPage() {
-  const getCategoryProductCount = (categoryName: string) => {
-    return products.filter(p => p.category === categoryName).length;
+  const [categories, setCategories] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  const fetchCategories = async () => {
+    try {
+      const response = await fetch('/api/categories');
+      const data = await response.json();
+      
+      // Handle error response from API
+      if (data.error) {
+        console.error('API Error:', data.error);
+        setCategories([]);
+      } else if (Array.isArray(data)) {
+        setCategories(data);
+      } else {
+        console.error('Unexpected data format:', data);
+        setCategories([]);
+      }
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+      setCategories([]);
+    } finally {
+      setLoading(false);
+    }
   };
+
+  if (loading) {
+    return (
+      <main className="min-h-screen pt-24 pb-20">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center h-64">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-charcoal"></div>
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen pt-24 pb-20">
@@ -27,15 +64,14 @@ export default function CategoriesPage() {
 
         {/* Categories Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((category, index) => {
-            const productCount = getCategoryProductCount(category.name);
+          {categories.map((category) => {
+            const productCount = category.productCount || 0;
             
             return (
               <motion.div
-                key={category.id}
+                key={category._id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
               >
                 <Link href={`/products?category=${category.name}`}>
