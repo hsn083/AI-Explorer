@@ -129,7 +129,7 @@ export default function ContactPage() {
                     </h3>
 
                     <p style={{ color: '#222222', fontSize: '16px', fontWeight: '500' }}>
-                      Sheikhupura, Pakistan
+                      Faisalabad, Pakistan
                     </p>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ export default function ContactPage() {
             <div className="h-64 md:h-96 rounded-2xl overflow-hidden">
 
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3170.001364710565!2d-122.0814!3d37.3898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c28a688b5b1f%3A0x80b1b64a08cfde2!2sSheikhupura%2C%20Pakistan!5e0!3m2!1sen!2s!4v1784371310287!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108877.6!2d73.0479!3d31.4504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921902b71495873%3A0x6f65a9e634a9f8d6!2sFaisalabad%2C%20Pakistan!5e0!3m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

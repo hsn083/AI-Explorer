@@ -86,7 +86,7 @@ export default function PrivacyPage() {
               </p>
               <p className="text-gray-400 mt-2">
                 WhatsApp: +92 314 3111118<br />
-                Email: work31323@gmail.com
+                Email: aiexplorerinfo01@gmail.com
               </p>
             </section>
 
