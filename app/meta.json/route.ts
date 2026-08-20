@@ -11,15 +11,29 @@ export async function GET() {
     openGraph: {
       title: "AI Explorer | Premium AI Tools & Digital Resources",
       description: "Discover the best AI tools, premium subscriptions, productivity software, and digital resources all in one place.",
-      url: "https://aiexplorer.com",
+      url: "https://www.aiexplorer.website/",
       siteName: "AI Explorer",
       locale: "en_US",
       type: "website",
+      images: [
+        {
+          url: "https://www.aiexplorer.website/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "AI Explorer - Premium AI Tools & Digital Resources",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: "AI Explorer | Premium AI Tools & Digital Resources",
       description: "Discover the best AI tools, premium subscriptions, productivity software, and digital resources all in one place.",
+      images: [
+        {
+          url: "https://www.aiexplorer.website/og-image.png",
+          alt: "AI Explorer - Premium AI Tools & Digital Resources",
+        },
+      ],
     },
     robots: {
       index: true,
