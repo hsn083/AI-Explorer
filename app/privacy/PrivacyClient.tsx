@@ -1,22 +1,9 @@
-import { Metadata } from 'next';
-import PrivacyClient from './PrivacyClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy | AI Explorer',
-  description: 'Read AI Explorer\'s privacy policy to understand how we collect, use, and protect your personal information.',
-  alternates: {
-    canonical: 'https://www.aiexplorer.website/privacy',
-  },
-  openGraph: {
-    title: 'Privacy Policy | AI Explorer',
-    description: 'Read AI Explorer\'s privacy policy to understand how we collect, use, and protect your personal information.',
-    url: 'https://www.aiexplorer.website/privacy',
-  },
-};
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
-export default function PrivacyPage() {
-  return <PrivacyClient />;
-}
+export default function PrivacyClient() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
   useEffect(() => {

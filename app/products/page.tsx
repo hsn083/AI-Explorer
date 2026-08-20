@@ -1,5 +1,19 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import ProductsClient from './ProductsClient';
+
+export const metadata: Metadata = {
+  title: 'Premium AI Tools & Digital Products | AI Explorer',
+  description: 'Browse premium AI tools, software subscriptions, productivity resources, and digital products at AI Explorer.',
+  alternates: {
+    canonical: 'https://www.aiexplorer.website/products',
+  },
+  openGraph: {
+    title: 'Premium AI Tools & Digital Products | AI Explorer',
+    description: 'Browse premium AI tools, software subscriptions, productivity resources, and digital products at AI Explorer.',
+    url: 'https://www.aiexplorer.website/products',
+  },
+};
 
 export default function ProductsPage() {
   return (

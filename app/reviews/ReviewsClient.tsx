@@ -1,22 +1,15 @@
-import { Metadata } from 'next';
-import ReviewsClient from './ReviewsClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Customer Reviews | AI Explorer',
-  description: 'Read genuine customer reviews and testimonials for AI Explorer\'s premium AI tools and digital products.',
-  alternates: {
-    canonical: 'https://www.aiexplorer.website/reviews',
-  },
-  openGraph: {
-    title: 'Customer Reviews | AI Explorer',
-    description: 'Read genuine customer reviews and testimonials for AI Explorer\'s premium AI tools and digital products.',
-    url: 'https://www.aiexplorer.website/reviews',
-  },
-};
+import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+import reviews from '@/data/reviews.json';
+import products from '@/data/products.json';
 
-export default function ReviewsPage() {
-  return <ReviewsClient />;
-}
+const ReviewCard = dynamic(() => import('@/components/ReviewCard'), {
+  loading: () => <div className="glass rounded-2xl p-6"><div className="flex items-start justify-between mb-4"><div className="flex items-center gap-3"><div className="w-12 h-12 rounded-full bg-white/10 animate-pulse" /><div><div className="h-4 w-24 bg-white/10 rounded animate-pulse mb-2" /><div className="flex items-center gap-2"><div className="flex gap-1">{[...Array(5)].map((_, i) => <div key={i} className="w-3 h-3 bg-white/10 rounded animate-pulse" />)}</div></div></div></div><div className="h-4 w-16 bg-white/10 rounded animate-pulse" /></div><div className="space-y-2 mb-4"><div className="h-3 w-full bg-white/10 rounded animate-pulse" /><div className="h-3 w-full bg-white/10 rounded animate-pulse" /><div className="h-3 w-3/4 bg-white/10 rounded animate-pulse" /></div><div className="h-4 w-24 bg-white/10 rounded animate-pulse" /></div>
+});
+
+export default function ReviewsClient() {
   return (
     <main className="min-h-screen pt-24 pb-20">
       <div className="container mx-auto px-4">

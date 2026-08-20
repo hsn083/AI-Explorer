@@ -1,22 +1,12 @@
-import { Metadata } from 'next';
-import CategoriesClient from './CategoriesClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Explore AI Tool Categories | AI Explorer',
-  description: 'Discover AI tools and digital resources organized by category to help you find the right tools for productivity, creativity, development, and more.',
-  alternates: {
-    canonical: 'https://www.aiexplorer.website/categories',
-  },
-  openGraph: {
-    title: 'Explore AI Tool Categories | AI Explorer',
-    description: 'Discover AI tools and digital resources organized by category to help you find the right tools for productivity, creativity, development, and more.',
-    url: 'https://www.aiexplorer.website/categories',
-  },
-};
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Bot } from 'lucide-react';
 
-export default function CategoriesPage() {
-  return <CategoriesClient />;
-}
+export default function CategoriesClient() {
   const [categories, setCategories] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 

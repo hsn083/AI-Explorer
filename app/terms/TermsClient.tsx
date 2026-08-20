@@ -1,22 +1,9 @@
-import { Metadata } from 'next';
-import TermsClient from './TermsClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Terms & Conditions | AI Explorer',
-  description: 'Read AI Explorer\'s terms and conditions to understand your rights and responsibilities when using our services.',
-  alternates: {
-    canonical: 'https://www.aiexplorer.website/terms',
-  },
-  openGraph: {
-    title: 'Terms & Conditions | AI Explorer',
-    description: 'Read AI Explorer\'s terms and conditions to understand your rights and responsibilities when using our services.',
-    url: 'https://www.aiexplorer.website/terms',
-  },
-};
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
-export default function TermsPage() {
-  return <TermsClient />;
-}
+export default function TermsClient() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
   useEffect(() => {

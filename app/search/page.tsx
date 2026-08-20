@@ -1,5 +1,19 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import SearchContent from './SearchContent';
+
+export const metadata: Metadata = {
+  title: 'Search AI Tools | AI Explorer',
+  description: 'Search for premium AI tools, digital products, and subscriptions on AI Explorer.',
+  alternates: {
+    canonical: 'https://www.aiexplorer.website/search',
+  },
+  openGraph: {
+    title: 'Search AI Tools | AI Explorer',
+    description: 'Search for premium AI tools, digital products, and subscriptions on AI Explorer.',
+    url: 'https://www.aiexplorer.website/search',
+  },
+};
 
 export default function SearchPage() {
   return (

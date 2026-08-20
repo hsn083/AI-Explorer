@@ -1,22 +1,10 @@
-import { Metadata } from 'next';
-import FAQClient from './FAQClient';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | AI Explorer',
-  description: 'Find answers to frequently asked questions about AI Explorer, digital products, subscriptions, orders, and support.',
-  alternates: {
-    canonical: 'https://www.aiexplorer.website/faq',
-  },
-  openGraph: {
-    title: 'Frequently Asked Questions | AI Explorer',
-    description: 'Find answers to frequently asked questions about AI Explorer, digital products, subscriptions, orders, and support.',
-    url: 'https://www.aiexplorer.website/faq',
-  },
-};
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import faq from '@/data/faq.json';
 
-export default function FAQPage() {
-  return <FAQClient />;
-}
+export default function FAQClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
