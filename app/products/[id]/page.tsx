@@ -66,6 +66,18 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     const oldPrice = product.originalPrice || product.oldPrice;
     const productImage = product.image || 'https://www.aiexplorer.website/og-image.png';
     
+    const offerData: any = {
+      '@type': 'Offer',
+      price: product.price,
+      priceCurrency: 'PKR',
+      availability: 'https://schema.org/InStock',
+      url: `https://www.aiexplorer.website/products/${id}`,
+    };
+
+    if (oldPrice) {
+      offerData.priceValidUntil = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+    }
+    
     productJsonLd = {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -73,19 +85,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       description: product.description,
       image: productImage,
       url: `https://www.aiexplorer.website/products/${id}`,
-      offers: {
-        '@type': 'Offer',
-        price: product.price,
-        priceCurrency: 'PKR',
-        availability: 'https://schema.org/InStock',
-        url: `https://www.aiexplorer.website/products/${id}`,
-      },
+      offers: offerData,
       category: product.category,
     };
-
-    if (oldPrice) {
-      productJsonLd.offers.priceValidUntil = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-    }
   }
 
   return (
