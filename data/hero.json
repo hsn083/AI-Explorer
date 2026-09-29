@@ -1,0 +1,56 @@
+{
+  "headline": "Premium Digital Tools for Smarter You",
+  "subtitle": "Get genuine AI tools, streaming subscriptions and learning platforms at affordable prices.",
+  "primaryButton": {
+    "text": "Order on WhatsApp",
+    "link": "https://wa.me/923143111118"
+  },
+  "secondaryButton": {
+    "text": "Explore Products",
+    "link": "/products"
+  },
+  "floatingIcons": [
+    {
+      "name": "ChatGPT",
+      "icon": "MessageSquare",
+      "position": { "x": 10, "y": 20 },
+      "delay": 0
+    },
+    {
+      "name": "Google AI",
+      "icon": "Brain",
+      "position": { "x": 85, "y": 15 },
+      "delay": 0.5
+    },
+    {
+      "name": "CapCut",
+      "icon": "Video",
+      "position": { "x": 15, "y": 70 },
+      "delay": 1
+    },
+    {
+      "name": "Prime",
+      "icon": "Play",
+      "position": { "x": 80, "y": 65 },
+      "delay": 1.5
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "Linkedin",
+      "position": { "x": 50, "y": 80 },
+      "delay": 2
+    },
+    {
+      "name": "Veo",
+      "icon": "Film",
+      "position": { "x": 5, "y": 45 },
+      "delay": 2.5
+    },
+    {
+      "name": "Grok",
+      "icon": "Bot",
+      "position": { "x": 90, "y": 40 },
+      "delay": 3
+    }
+  ]
+}

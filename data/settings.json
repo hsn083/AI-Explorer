@@ -1,0 +1,95 @@
+{
+  "businessName": "AI Explorer",
+  "whatsappNumber": "03143111118",
+  "whatsappLink": "https://wa.me/923143111118",
+  "businessHours": "24/7",
+  "email": "aiexplorerinfo01@gmail.com",
+  "socialLinks": {
+    "facebook": "#aiexplorer",
+    "instagram": "#aiexplorer",
+    "tiktok": "#aiexplorer",
+    "youtube": "#aiexplorer"
+  },
+  "seo": {
+    "defaultTitle": "AI Explorer | Premium AI Tools & Digital Resources",
+    "defaultDescription": "Discover the best AI tools, premium subscriptions, productivity software, and digital resources all in one place.",
+    "defaultKeywords": "AI Explorer, AI Tools, ChatGPT Plus, CapCut Pro, Google AI Pro, AI Software, Premium Tools, Digital Products"
+  },
+"trustBadges": [
+  {
+    "icon": "ShieldCheck",
+    "text": "100% Secure",
+    "description": "Safe & protected digital purchases."
+  },
+  {
+    "icon": "BadgeCheck",
+    "text": "Verified Accounts",
+    "description": "Only genuine premium subscriptions."
+  },
+  {
+    "icon": "Zap",
+    "text": "Instant Delivery",
+    "description": "Orders delivered within minutes."
+  },
+  {
+    "icon": "Award",
+    "text": "Premium Quality",
+    "description": "Top-rated AI tools & services."
+  },
+  {
+    "icon": "DollarSign",
+    "text": "Best Prices",
+    "description": "Affordable pricing with great value."
+  }
+],
+  "statistics": [
+    {
+      "value": 2500,
+      "label": "Happy Customers"
+    },
+    {
+      "value": 8,
+      "label": "Premium Products"
+    },
+    {
+      "value": 24,
+      "label": "Hours Support"
+    },
+    {
+      "value": 99,
+      "label": "Satisfaction %"
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "icon": "Zap",
+      "title": "Instant Delivery",
+      "description": "Get your account within minutes after payment confirmation"
+    },
+    {
+      "icon": "DollarSign",
+      "title": "Affordable Prices",
+      "description": "Premium products at the best prices in Pakistan"
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Original Accounts",
+      "description": "100% genuine and legally obtained accounts"
+    },
+    {
+      "icon": "MessageCircle",
+      "title": "WhatsApp Support",
+      "description": "24/7 customer support via WhatsApp"
+    },
+    {
+      "icon": "Award",
+      "title": "Trusted Seller",
+      "description": "Trusted by thousands of customers across Pakistan"
+    },
+    {
+      "icon": "Lock",
+      "title": "Safe Service",
+      "description": "Secure transactions and privacy guaranteed"
+    }
+  ]
+}

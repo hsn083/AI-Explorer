@@ -1,0 +1,812 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "customerName": "Ahmed K.",
+    "rating": 5,
+    "reviewText": "Really smooth experience and the response was quick. The extension works perfectly with my workflow.",
+    "date": "2026-01-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 2,
+    "productId": 1,
+    "customerName": "Fatima A.",
+    "rating": 4,
+    "reviewText": "Good value for the price. Setup instructions were easy to follow. Had a minor issue but support helped quickly.",
+    "date": "2026-01-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 3,
+    "productId": 1,
+    "customerName": "Usman M.",
+    "rating": 5,
+    "reviewText": "Best AI extension I've used. The smart suggestions actually save me time every day.",
+    "date": "2026-01-12",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 4,
+    "productId": 2,
+    "customerName": "Sara A.",
+    "rating": 5,
+    "reviewText": "18 months at this price is incredible. The AI features are way better than I expected.",
+    "date": "2026-01-08",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 5,
+    "productId": 2,
+    "customerName": "Hassan R.",
+    "rating": 4,
+    "reviewText": "Solid performance. Sometimes takes a bit to load but overall very happy with the purchase.",
+    "date": "2026-01-14",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 6,
+    "productId": 2,
+    "customerName": "Ayesha K.",
+    "rating": 5,
+    "reviewText": "Multi-language support is great. Use it for work and personal projects both.",
+    "date": "2026-01-13",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 7,
+    "productId": 3,
+    "customerName": "Bilal A.",
+    "rating": 5,
+    "reviewText": "Voice quality is amazing. Sounds almost human. Great for my YouTube channel.",
+    "date": "2026-01-11",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 8,
+    "productId": 3,
+    "customerName": "Zara S.",
+    "rating": 4,
+    "reviewText": "Good but takes some time to get the right voice settings. Once configured, works well.",
+    "date": "2026-01-09",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 9,
+    "productId": 3,
+    "customerName": "Ali H.",
+    "rating": 5,
+    "reviewText": "ElevenLabs engine is top-notch. 6 months is plenty of time to create lots of content.",
+    "date": "2026-01-07",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 10,
+    "productId": 4,
+    "customerName": "Mariam S.",
+    "rating": 5,
+    "reviewText": "HeyGen is incredible for video creation. The avatars look so realistic now.",
+    "date": "2026-01-06",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 11,
+    "productId": 4,
+    "customerName": "Umer F.",
+    "rating": 4,
+    "reviewText": "Voice cloning is cool but needs clear audio input. Overall satisfied with the results.",
+    "date": "2026-01-05",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 12,
+    "productId": 4,
+    "customerName": "Hina J.",
+    "rating": 5,
+    "reviewText": "HD export quality is excellent. Template library saves so much time.",
+    "date": "2026-01-04",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 13,
+    "productId": 5,
+    "customerName": "Sana M.",
+    "rating": 5,
+    "reviewText": "CapCut Pro 6 months at this price is a steal. No watermark is huge for me.",
+    "date": "2026-01-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 14,
+    "productId": 5,
+    "customerName": "Rashid A.",
+    "rating": 4,
+    "reviewText": "AI effects are fun but sometimes glitchy. Still worth it for the price.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 15,
+    "productId": 5,
+    "customerName": "Kashif M.",
+    "rating": 5,
+    "reviewText": "Premium templates are actually good quality. Use them for client work all the time.",
+    "date": "2026-01-01",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 16,
+    "productId": 6,
+    "customerName": "Nadia S.",
+    "rating": 5,
+    "reviewText": "ChatGPT Plus is essential for my work now. GPT-4 is way smarter than the free version.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 17,
+    "productId": 6,
+    "customerName": "Imran Q.",
+    "rating": 4,
+    "reviewText": "Great but sometimes gets slow during peak hours. Still worth the upgrade though.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 18,
+    "productId": 6,
+    "customerName": "Zainab B.",
+    "rating": 5,
+    "reviewText": "Image generation is surprisingly good. Use it for social media content.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 19,
+    "productId": 7,
+    "customerName": "Tariq A.",
+    "rating": 5,
+    "reviewText": "Perfect for short projects. 1 month is enough to test all the features.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 20,
+    "productId": 7,
+    "customerName": "Amara K.",
+    "rating": 4,
+    "reviewText": "Good but wish it was longer than 1 month. The features are solid though.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 21,
+    "productId": 7,
+    "customerName": "Babar A.",
+    "rating": 5,
+    "reviewText": "No watermark makes a huge difference. HD export is perfect for my needs.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 22,
+    "productId": 8,
+    "customerName": "Faraz A.",
+    "rating": 5,
+    "reviewText": "Canva Pro for 12 months at this price is unbeatable. Brand Kit is a game changer.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 23,
+    "productId": 8,
+    "customerName": "Maha K.",
+    "rating": 4,
+    "reviewText": "Background remover works well. Sometimes struggles with complex images but overall good.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 24,
+    "productId": 8,
+    "customerName": "Saad A.",
+    "rating": 5,
+    "reviewText": "Premium templates are actually professional quality. Use them for business presentations.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 25,
+    "productId": 9,
+    "customerName": "Ayesha N.",
+    "rating": 4,
+    "reviewText": "Hotmail account works fine. Nothing special but gets the job done for email needs.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 26,
+    "productId": 9,
+    "customerName": "Bilal R.",
+    "rating": 3,
+    "reviewText": "Basic account, works as expected. Setup was straightforward though.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 27,
+    "productId": 9,
+    "customerName": "Sana M.",
+    "rating": 5,
+    "reviewText": "Great backup email account. Microsoft integration is seamless.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 28,
+    "productId": 10,
+    "customerName": "Hassan G.",
+    "rating": 5,
+    "reviewText": "1M tokens is a lot. Use it for coding help and content generation both.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 29,
+    "productId": 10,
+    "customerName": "Zara B.",
+    "rating": 4,
+    "reviewText": "Advanced reasoning is impressive. Sometimes gives wrong info but mostly accurate.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 30,
+    "productId": 10,
+    "customerName": "Ali A.",
+    "rating": 5,
+    "reviewText": "Real-time information is the killer feature. Way better than other AI assistants.",
+    "date": "2026-01-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 31,
+    "productId": 11,
+    "customerName": "Fatima Z.",
+    "rating": 5,
+    "reviewText": "NordVPN is reliable. 3 months is good to test if you like it before committing longer.",
+    "date": "2026-01-05",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 32,
+    "productId": 11,
+    "customerName": "Omer J.",
+    "rating": 4,
+    "reviewText": "Speed is decent. Sometimes disconnects but reconnects quickly. Good value.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 33,
+    "productId": 11,
+    "customerName": "Sana A.",
+    "rating": 5,
+    "reviewText": "5000+ servers means I can always find a fast connection. No-logs policy is important to me.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 34,
+    "productId": 12,
+    "customerName": "Rashid M.",
+    "rating": 5,
+    "reviewText": "Leonardo AI is great for generating art. Multiple models give lots of variety.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 35,
+    "productId": 12,
+    "customerName": "Kashif A.",
+    "rating": 4,
+    "reviewText": "High resolution output is good. Custom training takes time but results are worth it.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 36,
+    "productId": 12,
+    "customerName": "Nadia R.",
+    "rating": 5,
+    "reviewText": "API access is huge for my projects. Essential plan has everything I need.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 37,
+    "productId": 13,
+    "customerName": "Imran S.",
+    "rating": 5,
+    "reviewText": "LinkedIn Premium actually helped me get noticed by recruiters. InMail credits are useful.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 38,
+    "productId": 13,
+    "customerName": "Zainab A.",
+    "rating": 4,
+    "reviewText": "Job insights are interesting. 2 months is enough to see if it helps your career.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 39,
+    "productId": 13,
+    "customerName": "Tariq M.",
+    "rating": 5,
+    "reviewText": "Learning courses are actually good quality. Salary insights helped in negotiations.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 40,
+    "productId": 14,
+    "customerName": "Amara M.",
+    "rating": 4,
+    "reviewText": "12 months is great value. Lite version has most features I need.",
+    "date": "2026-04-08",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 41,
+    "productId": 14,
+    "customerName": "Faraz R.",
+    "rating": 5,
+    "reviewText": "Smart suggestions are actually helpful. Task automation saves me hours weekly.",
+    "date": "2026-01-09",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 42,
+    "productId": 14,
+    "customerName": "Maha A.",
+    "rating": 4,
+    "reviewText": "Good for productivity. Sometimes suggestions are off but mostly accurate.",
+    "date": "2026-01-05",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 43,
+    "productId": 15,
+    "customerName": "Saad A.",
+    "rating": 5,
+    "reviewText": "4000 credits go a long way. Multiple AI models give great variety in styles.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 44,
+    "productId": 15,
+    "customerName": "Ayesha M.",
+    "rating": 4,
+    "reviewText": "Fast generation is nice. Commercial use license is important for my business.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 45,
+    "productId": 15,
+    "customerName": "Bilal S.",
+    "rating": 5,
+    "reviewText": "Professional quality output. 1 month is enough to generate lots of images.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 46,
+    "productId": 16,
+    "customerName": "Sana G.",
+    "rating": 4,
+    "reviewText": "Same as the other NordVPN plan. Reliable and secure. Good for 3 months.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 47,
+    "productId": 16,
+    "customerName": "Hassan M.",
+    "rating": 5,
+    "reviewText": "Advanced security features give peace of mind. Global servers work well.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 48,
+    "productId": 16,
+    "customerName": "Zara B.",
+    "rating": 4,
+    "reviewText": "Fast connection most of the time. Device protection is a nice bonus.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 49,
+    "productId": 17,
+    "customerName": "Tariq A.",
+    "rating": 5,
+    "reviewText": "7 days is perfect for testing. All premium features work as advertised.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 50,
+    "productId": 17,
+    "customerName": "Amara M.",
+    "rating": 4,
+    "reviewText": "Good for short projects. Wish it was longer but 7 days at this price is fair.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 51,
+    "productId": 17,
+    "customerName": "Faraz K.",
+    "rating": 5,
+    "reviewText": "AI effects are fun. No watermark is crucial for my content.",
+    "date": "2026-01-07",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 52,
+    "productId": 18,
+    "customerName": "Maha R.",
+    "rating": 5,
+    "reviewText": "Full Adobe suite is incredible. Photoshop, Illustrator, Premiere - everything works.",
+    "date": "2026-01-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 53,
+    "productId": 18,
+    "customerName": "Saad M.",
+    "rating": 4,
+    "reviewText": "Cloud storage is convenient. Apps take time to install but worth it.",
+    "date": "2026-01-01",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 54,
+    "productId": 18,
+    "customerName": "Ayesha A.",
+    "rating": 5,
+    "reviewText": "Industry standard software. Creative assets library is huge time saver.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 55,
+    "productId": 19,
+    "customerName": "Bilal S.",
+    "rating": 5,
+    "reviewText": "Notion Business is great for team collaboration. 3 months is good trial period.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 56,
+    "productId": 19,
+    "customerName": "Sana G.",
+    "rating": 4,
+    "reviewText": "API access is useful for automation. Admin tools are comprehensive.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 57,
+    "productId": 19,
+    "customerName": "Hassan M.",
+    "rating": 5,
+    "reviewText": "Unlimited pages is great. Organized my entire workflow in Notion.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 58,
+    "productId": 20,
+    "customerName": "Zara B.",
+    "rating": 5,
+    "reviewText": "Unlimited usage is the key feature. No more hitting token limits.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 59,
+    "productId": 20,
+    "customerName": "Tariq A.",
+    "rating": 4,
+    "reviewText": "Advanced AI models are impressive. X integration is cool for social media.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 60,
+    "productId": 20,
+    "customerName": "Amara M.",
+    "rating": 5,
+    "reviewText": "Real-time data access is game changing. Way better than limited versions.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 61,
+    "productId": 21,
+    "customerName": "Faraz A.",
+    "rating": 5,
+    "reviewText": "Cursor is amazing for coding. AI code completion saves so much time.",
+    "date": "2026-01-05",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 62,
+    "productId": 21,
+    "customerName": "Maha K.",
+    "rating": 4,
+    "reviewText": "Smart suggestions are helpful. Sometimes suggests wrong code but mostly accurate.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 63,
+    "productId": 21,
+    "customerName": "Saad A.",
+    "rating": 5,
+    "reviewText": "Multi-file editing is great. Terminal integration makes it a complete IDE.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 64,
+    "productId": 22,
+    "customerName": "Ayesha M.",
+    "rating": 5,
+    "reviewText": "130K credits is plenty. Natural voice generation is impressive.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 65,
+    "productId": 22,
+    "customerName": "Bilal S.",
+    "rating": 4,
+    "reviewText": "Multiple voices give good variety. High quality audio for professional use.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 66,
+    "productId": 22,
+    "customerName": "Sana G.",
+    "rating": 5,
+    "reviewText": "Commercial use license is important. Flexible credit usage is great.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 67,
+    "productId": 23,
+    "customerName": "Hassan M.",
+    "rating": 5,
+    "reviewText": "All countries coverage is amazing. High speed and secure connection.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 68,
+    "productId": 23,
+    "customerName": "Zara B.",
+    "rating": 4,
+    "reviewText": "Multiple IPs are useful. 24/7 support is responsive when needed.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 69,
+    "productId": 23,
+    "customerName": "Tariq A.",
+    "rating": 5,
+    "reviewText": "Global proxy access at this price is unbeatable. Reliable service.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 70,
+    "productId": 24,
+    "customerName": "Amara M.",
+    "rating": 5,
+    "reviewText": "Gmail account with full features. Google ecosystem integration is seamless.",
+    "date": "2026-04-08",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 71,
+    "productId": 24,
+    "customerName": "Faraz A.",
+    "rating": 4,
+    "reviewText": "Cloud storage is generous. Security features are solid.",
+    "date": "2026-01-05",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 72,
+    "productId": 24,
+    "customerName": "Maha K.",
+    "rating": 5,
+    "reviewText": "Email management is easy. Professional communication tool.",
+    "date": "2026-01-02",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 73,
+    "productId": 25,
+    "customerName": "Saad A.",
+    "rating": 5,
+    "reviewText": "n8n is incredible for automation. 500+ integrations cover everything I need.",
+    "date": "2026-07-17",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 74,
+    "productId": 25,
+    "customerName": "Ayesha M.",
+    "rating": 4,
+    "reviewText": "Visual editor makes it easy to build workflows. Cloud hosting is convenient.",
+    "date": "2026-07-10",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 75,
+    "productId": 25,
+    "customerName": "Bilal S.",
+    "rating": 5,
+    "reviewText": "1 year at this price is amazing. API access for custom integrations.",
+    "date": "2026-06-28",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 76,
+    "productId": 26,
+    "customerName": "Sana G.",
+    "rating": 5,
+    "reviewText": "ExpressVPN is top tier. Lightning fast and very reliable.",
+    "date": "2026-06-15",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 77,
+    "productId": 26,
+    "customerName": "Hassan M.",
+    "rating": 4,
+    "reviewText": "3000+ servers mean always finding a good connection. Trusted provider.",
+    "date": "2026-05-20",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 78,
+    "productId": 26,
+    "customerName": "Zara B.",
+    "rating": 5,
+    "reviewText": "Military-grade encryption gives peace of mind. Multi-device support is great.",
+    "date": "2026-05-03",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 79,
+    "productId": 27,
+    "customerName": "Tariq A.",
+    "rating": 5,
+    "reviewText": "YouTube Premium is amazing. No ads and background play are essential.",
+    "date": "2026-04-21",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 80,
+    "productId": 27,
+    "customerName": "Amara M.",
+    "rating": 4,
+    "reviewText": "YouTube Music is a nice bonus. Offline downloads work well.",
+    "date": "2026-04-08",
+    "verifiedPurchase": false,
+    "isDemo": true
+  },
+  {
+    "id": 81,
+    "productId": 27,
+    "customerName": "Faraz K.",
+    "rating": 5,
+    "reviewText": "3 months is perfect. Original content is actually good quality.",
+    "date": "2026-01-07",
+    "verifiedPurchase": false,
+    "isDemo": true
+  }
+]

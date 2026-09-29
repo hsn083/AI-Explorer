@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "How do I place an order?",
+    "answer": "Simply click the 'Order on WhatsApp' button on any product page. This will open WhatsApp with a pre-filled message. Send the message and our team will guide you through the payment and delivery process."
+  },
+  {
+    "id": 2,
+    "question": "How is the product delivered?",
+    "answer": "After payment confirmation, we deliver the account credentials instantly via WhatsApp. Most deliveries are completed within 5-15 minutes."
+  },
+  {
+    "id": 3,
+    "question": "Are the accounts genuine and original?",
+    "answer": "Yes, all our accounts are 100% genuine, original, and legally obtained. We provide full owner accounts wherever possible and ensure complete account access."
+  },
+  {
+    "id": 4,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept various payment methods including JazzCash, EasyPaisa, Bank Transfer, and USDT. Our team will provide you with the payment details when you place your order."
+  },
+  {
+    "id": 5,
+    "question": "Is there any warranty on the products?",
+    "answer": "Yes, we provide warranty on all our products. The warranty period varies by product. If any issues arise during the warranty period, we will resolve them free of charge."
+  },
+  {
+    "id": 6,
+    "question": "Can I change the account password?",
+    "answer": "For owner accounts, yes you can change the password. For shared accounts, password changes are managed by us to ensure all users have access. We'll provide specific instructions for your product."
+  },
+  {
+    "id": 7,
+    "question": "Do you offer refunds?",
+    "answer": "Refunds are handled on a case-by-case basis. If the product is not as described or doesn't work, we will either replace it or issue a refund. Contact our support team for assistance."
+  },
+  {
+    "id": 8,
+    "question": "How can I contact customer support?",
+    "answer": "Our customer support is available 24/7 on WhatsApp at +92 314 3111118. You can also reach us through the contact form on our website."
+  }
+]
