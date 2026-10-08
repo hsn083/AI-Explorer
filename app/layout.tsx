@@ -80,6 +80,7 @@ export default function RootLayout({
         <ClientProviders>
           <LayoutSelector>{children}</LayoutSelector>
         </ClientProviders>
+        <script src="https://cdn.zanderio.ai/widget/loader.js" data-id="wdg_HizXPVifodlFj0DlQ2GS7mJJ" defer></script>
       </body>
     </html>
   );
