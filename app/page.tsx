@@ -50,7 +50,6 @@ export default function Home() {
       <StructuredData data={jsonLd} />
       <StructuredData data={websiteJsonLd} />
       <ClientHome />
-      <AdsterraAd />
     </>
   );
 }
