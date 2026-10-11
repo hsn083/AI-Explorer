@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import HomeClient from './HomeClient';
 import StructuredData from '@/components/StructuredData';
-import AdsterraAd from "@/components/AdsterraAd";
 
 const ClientHome = dynamic(() => import('./HomeClient'), {
   ssr: true,
